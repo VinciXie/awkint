@@ -75,6 +75,7 @@ body {
 }
 
 .icon_explain, .flex_icon {
+  display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -213,6 +214,7 @@ body {
 
 #product {
   .serial-title, .serial-title1, .serial-title2, .serial-title3, .serial-title4,  {
+    display: -webkit-flex;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -241,6 +243,7 @@ body {
     }
   }
   .works {
+    display: -webkit-flex;
     display: flex;
     // flex-direction: column;
     flex-wrap: wrap;
@@ -444,5 +447,19 @@ body {
   color: $blue-2;
   .white_line {
     background-color: $blue-2;
+  }
+}
+
+.scrollup {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  bottom: 10px;
+  right: 10px;
+  background-color: $black;
+  i.icon-angle-up {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
   }
 }
