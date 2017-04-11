@@ -63,7 +63,6 @@ $(function(){
   // $('body').height()
   $('.background3,.background5').height(document.body.offsetHeight);
 
-  //
-  // $('#menu-main, .brand').localScroll();
+  // 飞到顶部
   $('.navbar-nav').localScroll();
 });
