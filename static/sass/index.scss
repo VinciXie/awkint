@@ -41,13 +41,14 @@
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 767px) {
   .navbar-default .navbar-nav > li {
     padding-top: 30px;
     margin-right: 7px;
     padding-bottom: 30px;
     border-top: none;
     a {
+      font-size: 20px;
       color: $white;
       &:hover {
         color: $white;
@@ -78,13 +79,6 @@
   background: none;
 }
 
-.aaa {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  transform-style:preserve-3d;
-  transform:rotateY(50deg);
-}
 
 .icon_explain, .flex_icon {
   display: -webkit-flex;

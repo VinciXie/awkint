@@ -29,20 +29,33 @@ body{
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-
     width: 40px;
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 767px) {
+  .navbar-header {
+    margin-top: 10px;
+  }
   .navbar-brand {
-    height: 100px;
-    line-height: 60px;
+    height: 48px;
     > img {
-      top: 20%;
+      // top: 20%;
       width: 30px;
     }
   }
 }
+// @media screen and (max-width: 440px) {
+//   .navbar-brand {
+//     height: 60px;
+//     line-height: 60px;
+//     > img {
+//       top: 20%;
+//       width: 30px;
+//     }
+//   }
+// }
+
+
 
 .w1 {
   color: $white;
