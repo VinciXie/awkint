@@ -45,7 +45,7 @@ body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, d
   padding: 0; }
 
 body {
-  font: "PingFang SC", "Arial", "Microsoft YaHei", "榛戜綋", "瀹嬩綋", sans-serif;
+  font: "PingFang SC", "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
   color: #555;
   background-color: #ffffff; }
 
@@ -75,27 +75,25 @@ strong {
 
 a {
   text-decoration: none;
-  color: #969696;
-  font-family: 'san_francisco_displaysemibold', Tahoma, Arial, sans-serif; }
+  color: #969696; }
 
 p {
   /*font-family: 'san_francisco_displaysemibold';*/ }
 
 a:hover {
+  color: none;
   text-decoration: none; }
 
 ul, ol {
   list-style: none; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-family: 'san_francisco_displaysemibold'; }
+  font-size: 100%; }
 
 img {
   border: none; }
 
 input {
-  font-family: 'san_francisco_displaysemibold';
   outline-style: none; }
 
 .w1 {
@@ -178,14 +176,20 @@ html, body {
 html {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
   font-size: 12px;
   color: #f5f5f5; }
 
 body {
+  position: relative;
   width: 100%;
+  overflow-x: hidden;
   background-color: #4d2dc3;
   color: #f5f5f5;
   z-index: -6; }
+
+.container > p {
+  font-weight: bold; }
 
 .navbar-brand {
   position: relative;
@@ -212,19 +216,19 @@ body {
   text-align: center; }
 
 .h1 {
-  font-family: "PingFang SC", "Arial", "Microsoft YaHei", "榛戜綋", "瀹嬩綋", sans-serif;
+  font-family: "PingFang SC", "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
   font-size: 5.3rem;
   font-weight: bold;
   line-height: 10rem; }
 
 .h2 {
-  font-family: "PingFang SC", "Arial", "Microsoft YaHei", "榛戜綋", "瀹嬩綋", sans-serif;
+  font-family: "PingFang SC", "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
   font-size: 4rem;
   font-weight: bold;
   line-height: 1.1; }
 
 .h3 {
-  font-family: "PingFang SC", "Arial", "Microsoft YaHei", "榛戜綋", "瀹嬩綋", sans-serif;
+  font-family: "PingFang SC", "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
   font-size: 2rem;
   font-weight: bold; }
 
@@ -239,12 +243,12 @@ body {
   font-weight: bold; }
 
 .explain {
-  font-family: "PingFang SC", "Arial", "Microsoft YaHei", "榛戜綋", "瀹嬩綋", sans-serif;
+  font-family: "PingFang SC", "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
   font-size: 1.5rem;
   font-weight: bold; }
 
 .explain_regular, .explain_regular > p {
-  font-family: "PingFang SC", "Arial", "Microsoft YaHei", "榛戜綋", "瀹嬩綋", sans-serif;
+  font-family: "PingFang SC", "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
   font-size: 1.5rem;
   font-weight: normal;
   line-height: 1.4; }
@@ -285,7 +289,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     font-family: "gothamregular", "Arial", Helvetica;
-    font-size: 1rem;
+    font-size: 12px;
     font-weight: normal;
     color: #585858; }
 
@@ -300,19 +304,29 @@ footer {
 .w1 .background3 {
   position: absolute;
   width: 100%;
-  height: 3900px;
   transform: translateX(calc(320px + 60%)) skewX(-7deg);
   background-color: #f5f5f5;
   opacity: 0.05;
   z-index: -4; }
+  @media screen and (max-width: 760px) {
+    .w1 .background3 {
+      height: 3900px; } }
+  @media screen and (max-width: 380px) {
+    .w1 .background3 {
+      height: 3600px; } }
 .w1 .background5 {
   position: absolute;
   width: 100%;
-  height: 3900px;
-  transform: translateX(calc(-320px - 80%)) skewX(-7deg);
+  transform: translateX(calc(-390px - 80%)) skewX(-7deg);
   background-color: #f5f5f5;
   opacity: 0.05;
   z-index: -2; }
+  @media screen and (max-width: 760px) {
+    .w1 .background5 {
+      height: 3900px; } }
+  @media screen and (max-width: 380px) {
+    .w1 .background5 {
+      height: 3600px; } }
 .w1 .background4 {
   position: absolute;
   width: 4786px;
@@ -324,7 +338,7 @@ footer {
 .w1 .background6 {
   position: absolute;
   left: 50%;
-  width: 2200px;
+  width: 2600px;
   height: calc(200px + 100%);
   transform: translate(-50%, -200px);
   vertical-align: bottom;
@@ -332,12 +346,12 @@ footer {
   -webkit-clip-path: polygon(0 0, 100% 42%, 100% 100%, 0% 100%);
   z-index: -1; }
 
-body {
-  overflow-x: hidden; }
-
 .w1 > .navbar-default {
+  overflow-x: hidden;
   background: none;
   border: none; }
+  .w1 > .navbar-default .navbar-brand {
+    position: fixed; }
   .w1 > .navbar-default .navbar-collapse {
     border: none;
     box-shadow: none; }
@@ -407,73 +421,77 @@ body {
   text-align: center; }
 
 .members {
-  width: 63%;
+  width: 84%;
   min-width: 280px;
   margin: auto; }
   .members > .tabContent {
     display: none;
     width: 100%;
-    height: 441px; }
+    height: 441px;
+    background-color: #4608ad; }
     .members > .tabContent .member-l {
       padding-left: 7%;
+      height: 305px;
       text-align: left; }
       .members > .tabContent .member-l .wl {
         height: 7px;
         width: 45px;
         background-color: #f5f5f5; }
+        @media screen and (max-width: 760px) {
+          .members > .tabContent .member-l .wl {
+            height: 4px;
+            width: 30px; } }
       .members > .tabContent .member-l p:nth-child(1) {
-        margin-top: 100px;
+        margin-top: 146px;
         margin-bottom: 44px; }
+    .members > .tabContent:nth-of-type(7) .member-l > p:first-child {
+      margin-top: 116px; }
+    .members > .tabContent .member-r {
+      display: -webkit-flex;
+      display: flex;
+      padding: 0 4%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: left; }
+      .members > .tabContent .member-r > .explain_regular {
+        line-height: 1; }
+      .members > .tabContent .member-r > .explain_regular:nth-child(1) {
+        margin-top: 30px;
+        margin-bottom: 50px; }
+      .members > .tabContent .member-r > .explain_regular:nth-child(2) {
+        margin-bottom: 50px; }
+      .members > .tabContent .member-r > .explain_regular:nth-child(3) {
+        margin-bottom: 40px; }
   .members > .box {
     position: relative;
     height: 6rem;
     background-color: #f5f5f5;
     line-height: 5rem;
-    font-family: "PingFang SC", "Arial", "Microsoft YaHei", "榛戜綋", "瀹嬩綋", sans-serif;
-    font-size: 1rem;
+    font-family: "PingFang SC", "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    font-size: 12px;
     font-weight: bold;
     color: #363636;
     cursor: pointer; }
-    .members > .box span {
+    .members > .box .arrow {
       display: block;
       position: absolute;
       left: 50%;
       bottom: 10%;
-      width: 8px;
-      height: 8px;
-      border-top: 2px solid #dbdbdb;
-      border-right: 2px solid #dbdbdb;
+      width: 10px;
+      height: 10px;
+      transform: translateX(-50%);
       transition: all 0.5s; }
       @media screen and (max-width: 760px) {
-        .members > .box span {
+        .members > .box .arrow {
           width: 8px;
           height: 8px; } }
-    .members > .box .rotate-45 {
-      transform: translateX(-50%) rotate(-45deg); }
-    .members > .box .rotate135 {
-      transform: translateX(-50%) rotate(135deg); }
   .members > .box.active {
     background-color: #4608ad;
     color: #f5f5f5;
     border-bottom: 1px solid #4608ad; }
-    .members > .box.active span {
-      display: block;
-      position: absolute;
-      left: 50%;
-      bottom: 10%;
-      width: 8px;
-      height: 8px;
-      border-top: 2px solid #f5f5f5;
-      border-right: 2px solid #f5f5f5;
-      transition: all 0.5s; }
-      @media screen and (max-width: 760px) {
-        .members > .box.active span {
-          width: 8px;
-          height: 8px; } }
-    .members > .box.active .rotate-45 {
-      transform: translateX(-50%) rotate(-45deg); }
-    .members > .box.active .rotate135 {
-      transform: translateX(-50%) rotate(135deg); }
+    .members > .box.active .arrow {
+      transform: translateX(-50%) rotate(180deg); }
   .members .box:nth-of-type(1) {
     border-top-left-radius: 2px;
     border-right: 1px solid #dbdbdb; }
@@ -493,21 +511,36 @@ body {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  text-align: left; }
+  text-align: left;
+  vertical-align: top; }
   #product .serial-title .serial-number, #product .serial-title1 .serial-number, #product .serial-title2 .serial-number, #product .serial-title3 .serial-number, #product .serial-title4 .serial-number {
     margin-left: 10px;
     margin-right: 10px;
     font-family: "gothamregular", "Arial", Helvetica;
     font-size: 9rem;
     font-weight: bolder;
-    line-height: 8.5rem;
-    vertical-align: bottom; }
+    line-height: 9rem; }
   #product .serial-title .serial-content > .h2, #product .serial-title1 .serial-content > .h2, #product .serial-title2 .serial-content > .h2, #product .serial-title3 .serial-content > .h2, #product .serial-title4 .serial-content > .h2 {
     margin: 0;
     line-height: 1.2; }
   #product .serial-title .serial-content > .h3, #product .serial-title1 .serial-content > .h3, #product .serial-title2 .serial-content > .h3, #product .serial-title3 .serial-content > .h3, #product .serial-title4 .serial-content > .h3 {
     margin: 0;
     line-height: 1.4; }
+@media screen and (max-width: 380px) {
+  #product .serial-title1 > .serial-content .h2 {
+    font-size: 28px; }
+  #product .serial-title1 > .serial-content .gotham_border > p {
+    font-size: 16px; } }
+@media screen and (max-width: 330px) {
+  #product .serial-title1 > .serial-content .h2 {
+    font-size: 24px; }
+  #product .serial-title1 > .serial-content .gotham_border > p {
+    font-size: 12px; } }
+#product .serial-title3 {
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  margin-bottom: 5.5rem; }
 #product .works {
   display: -webkit-flex;
   display: flex;
@@ -526,6 +559,12 @@ body {
   @media screen and (max-width: 380px) {
     #product .works {
       height: 66px; } }
+  #product .works .box:first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px; }
+  #product .works .box:last-child {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px; }
   #product .works .box {
     position: relative;
     height: 100%;
@@ -578,37 +617,36 @@ body {
     border-top: 1px solid #4608ad; }
   #product .works .box + .box {
     border-left: 1px solid #dbdbdb; }
-  #product .works .box > span {
+  #product .works .box > .arrow {
     display: block;
     position: absolute;
     left: 50%;
     bottom: 10%;
     width: 12px;
     height: 12px;
-    border-top: 2px solid #ccc;
-    border-right: 2px solid #ccc;
+    transform: translateX(-50%);
     transition: all 0.5s; }
     @media screen and (max-width: 760px) {
-      #product .works .box > span {
+      #product .works .box > .arrow {
         width: 8px;
         height: 8px; } }
-  #product .works .rotate-45 {
-    transform: translateX(-50%) rotate(-45deg); }
-  #product .works .rotate135 {
-    transform: translateX(-50%) rotate(135deg); }
+  #product .works .box.active > .arrow {
+    transform: translateX(-50%) rotate(180deg); }
 #product .tabContent {
   position: relative;
   display: none;
   margin: 0 auto;
-  padding-top: 53px;
   max-width: 646px;
   height: 157px;
   background-color: #4608ad;
   border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px; }
-#product .tabContent p {
-  font-size: 18px;
-  color: #fff; }
+  border-bottom-right-radius: 2px;
+  text-align: center; }
+  #product .tabContent p {
+    padding: 0 5%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #fff; }
 #product .explain_sm {
   margin-top: 3rem;
   margin-bottom: 5.5rem;
@@ -618,14 +656,9 @@ body {
     #product .explain_sm {
       margin-left: 63px; } }
   #product .explain_sm > p {
-    font-family: "PingFang SC", "Arial", "Microsoft YaHei", "榛戜綋", "瀹嬩綋", sans-serif;
-    font-size: 1rem;
+    font-family: "PingFang SC", "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    font-size: 12px;
     font-weight: normal; }
-#product .serial-title3 {
-  justify-content: flex-end;
-  align-items: flex-end;
-  text-align: right;
-  margin-bottom: 5.5rem; }
 
 @media screen and (max-width: 760px) {
   #product > .container .serial-number {
@@ -635,10 +668,6 @@ body {
   margin-top: 5.5rem;
   padding: 3px 10px;
   text-align: left; }
-  #market .market-size .market2 p:nth-child(2) {
-    margin-left: 4rem; }
-  #market .market-size .market2 p:nth-child(3) {
-    margin-left: 8rem; }
   #market .market-size .unslider-nav {
     margin-top: 7.9rem; }
     #market .market-size .unslider-nav ol {
@@ -678,10 +707,9 @@ body {
   height: 48px;
   bottom: 10px;
   right: 10px;
+  border-radius: 50%;
   background-color: #363636; }
-  .scrollup i.icon-angle-up {
-    width: 48px;
-    height: 48px;
-    line-height: 48px; }
+  .scrollup img {
+    width: 18px; }
 
 /*# sourceMappingURL=index.css.map */

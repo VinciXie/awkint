@@ -12,16 +12,17 @@
     opacity: 0.03;
     z-index: -5;
   }
-  $offsetHeight: 4400px;
-  @media screen and (max-width: 760px) {
-    $offsetHeight: 3900px;
-  }
   .background3 {
     // 页面右边的透明背景区域
     position: absolute;
     width: 100%;
-    height: $offsetHeight;
     // height: 300rem;
+    @media screen and (max-width: 760px) {
+      height: 3900px;
+    }
+    @media screen and (max-width: 380px) {
+      height: 3600px;
+    }
     transform: translateX(calc(320px + 60%)) skewX(-7deg);
     background-color: $white;
     opacity: 0.05;
@@ -31,8 +32,13 @@
     // 页面左边的透明背景区域
     position: absolute;
     width: 100%;
-    height: $offsetHeight;
-    transform: translateX(calc(-320px - 80%)) skewX(-7deg);
+    @media screen and (max-width: 760px) {
+      height: 3900px;
+    }
+    @media screen and (max-width: 380px) {
+      height: 3600px;
+    }
+    transform: translateX(calc(-390px - 80%)) skewX(-7deg);
     background-color: $white;
     opacity: 0.05;
     z-index: -2;
@@ -51,7 +57,7 @@
     // 底部的白色区域
     position: absolute;
     left: 50%;
-    width: 2200px;
+    width: 2600px;
     height: calc(200px + 100%);
     transform: translate(-50%,-200px);
     vertical-align: bottom;

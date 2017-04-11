@@ -87,12 +87,12 @@ strong {
 a {
 	text-decoration: none;
 	color: #969696;
-	font-family: 'san_francisco_displaysemibold', Tahoma, Arial, sans-serif;
 }
 p{
 	/*font-family: 'san_francisco_displaysemibold';*/
 }
 a:hover {
+  color: none;
 	text-decoration: none;
 }
 ul, ol {
@@ -100,14 +100,12 @@ ul, ol {
 }
 h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
-	font-family: 'san_francisco_displaysemibold';
 }
 img {
 	border: none;
 }
 input{
-	font-family: 'san_francisco_displaysemibold';
-    outline-style: none;
+  outline-style: none;
 }
 
 .w1{
