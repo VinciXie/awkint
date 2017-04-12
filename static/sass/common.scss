@@ -39,7 +39,9 @@ body{
   .navbar-brand {
     height: 48px;
     > img {
-      // top: 20%;
+      position: absolute;
+      top: 26px;
+      left: 20px;
       width: 30px;
     }
   }

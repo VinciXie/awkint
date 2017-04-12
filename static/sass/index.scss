@@ -6,6 +6,7 @@
 @import "mixin";
 
 .w1 > .navbar-default {
+  position: relative;
   overflow-x: hidden;
   background: none;
   border: none;
@@ -32,7 +33,7 @@
     padding: 0;
     margin: 15px 0;
     color: $white;
-    &:hover {
+    &:hover, &:focus {
       color: $white;
     }
   }
@@ -78,6 +79,67 @@
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background: none;
 }
+
+
+/* user defined navbar */
+@media screen and (max-width: 760px) {
+    .background7 {
+        background-color: #43089d;
+        position: absolute;
+        width: 100%;
+        opacity: 0.05;
+    }
+    .background8 {
+        background-color: #363636;
+        position: absolute;
+        width: 100%;
+        opacity: 0.05;
+    }
+    .background9 {
+        background-color: #43089d;
+        position: absolute;
+        width: 100%;
+        opacity: 0.05;
+    }
+    #bs-example-navbar-collapse-1 a {
+        font-size: 20px;
+    }
+    #bs-example-navbar-collapse-1 .nav {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        height: 100%;
+    }
+    #bs-example-navbar-collapse-1 .nav li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-header .icon-x {
+        display: block;
+        border: none;
+        height: 22px;
+        width: 22px;
+        background-image: url(../images/cross.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .btn-hide {
+        display: none;
+    }
+    nav .container {
+        position: relative;
+    }
+
+}
+
+
 
 
 .icon_explain, .flex_icon {
@@ -409,6 +471,7 @@
     margin-top: 3rem;
     margin-bottom: 5.5rem;
     margin-left: 85px;
+    padding-right: 10px;
     text-align: left;
     @media screen and (max-width: 760px) {
       margin-left: 63px;

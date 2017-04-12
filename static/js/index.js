@@ -63,6 +63,34 @@ $(function(){
   // $('body').height()
   $('.background3,.background5').height(document.body.offsetHeight);
 
-  // 飞到顶部
+  // 把三横变成 x
+  $("#bs-example-navbar-collapse-1 > .nav > li > a").click(function() {
+    if($(window).width() < 760) {
+      // $("#bs-example-navbar-collapse-1").slideUp('fast')
+      $(".navbar-header > button").eq(0).show()
+      $(".navbar-header > button").eq(1).hide()
+    }
+  })
+
+  // 飞到特定位置
   $('.navbar-nav').localScroll();
+
+  // set navbar size when loading
+  if($(window).width() < 760) {
+      $("#bs-example-navbar-collapse-1").css("height", $(window).height() - 58)
+  }
+  $(".navbar-toggle").click(function() {
+      var index = $(this).index()
+      if(index == 0) {
+          $("#bs-example-navbar-collapse-1").slideDown()
+          $(this).hide()
+          $(this).next().show()
+      } else if(index == 1) {
+          $("#bs-example-navbar-collapse-1").slideUp()
+          $(this).hide()
+          $(this).prev().show()
+      }
+  })
+
+
 });

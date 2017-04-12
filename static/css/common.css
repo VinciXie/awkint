@@ -37,6 +37,9 @@ body {
   .navbar-brand {
     height: 48px; }
     .navbar-brand > img {
+      position: absolute;
+      top: 26px;
+      left: 20px;
       width: 30px; } }
 .w1 {
   color: #f5f5f5;
