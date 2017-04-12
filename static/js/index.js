@@ -77,7 +77,7 @@ $(function(){
 
   // set navbar size when loading
   if($(window).width() < 760) {
-      $("#bs-example-navbar-collapse-1").css("height", $(window).height() - 58)
+      $("#bs-example-navbar-collapse-1").css("height", $(window).height() - 55)
   }
   $(".navbar-toggle").click(function() {
       var index = $(this).index()

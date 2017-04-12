@@ -206,10 +206,10 @@ body {
 
 @media screen and (max-width: 767px) {
   .navbar-header {
-    margin-top: 10px; }
+    margin-top: 5px; }
 
   .navbar-brand {
-    height: 48px; }
+    height: 40px; }
     .navbar-brand > img {
       position: absolute;
       top: 26px;
@@ -404,25 +404,49 @@ footer {
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background: none; }
 
+@media screen and (max-width: 760px) {
+  .navbar-header > button, .navbar-header a {
+    z-index: 5; } }
 /* user defined navbar */
 @media screen and (max-width: 760px) {
+  #bs-example-navbar-collapse-1 {
+    position: relative;
+    z-index: 1;
+    background-color: #4608ad; }
+
   .background7 {
-    background-color: #43089d;
     position: absolute;
+    left: 0;
+    top: -62px;
+    background-color: #43089D;
     width: 100%;
-    opacity: 0.05; }
+    height: 18%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+    z-index: 2; }
 
   .background8 {
-    background-color: #363636;
     position: absolute;
+    background-color: #43089D;
+    left: 0;
+    bottom: 0;
+    height: 29%;
     width: 100%;
-    opacity: 0.05; }
+    -webkit-clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+    z-index: 2; }
 
   .background9 {
-    background-color: #43089d;
     position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #363636;
+    border: none;
+    height: 29%;
     width: 100%;
-    opacity: 0.05; }
+    -webkit-clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%);
+    z-index: 3; }
 
   #bs-example-navbar-collapse-1 a {
     font-size: 20px; }
@@ -434,20 +458,21 @@ footer {
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
+    justify-content: flex-start;
+    padding-top: 7%;
     height: 100%; }
 
   #bs-example-navbar-collapse-1 .nav li {
     width: 100%;
-    margin: 0;
-    padding: 0; }
+    height: 13%;
+    margin-left: 0;
+    margin-right: 0; }
 
   .navbar-header .icon-x {
     display: block;
     border: none;
-    height: 22px;
-    width: 22px;
+    height: 16px;
+    width: 16px;
     background-image: url(../images/cross.png);
     background-position: center;
     background-size: cover;
