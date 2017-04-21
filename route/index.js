@@ -17,7 +17,9 @@ var index = {
     func: function(request, response) {
       var id = request.params.id || '';
       // console.log('id', id);
-        var path = `index${id}.html`
+        // var path = `index${id}.html`
+        // var path = 'index.html'
+        var path = 'index1.html'
         sendHtml(path, response)
     }
 }
