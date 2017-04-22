@@ -6,7 +6,7 @@
     <!-- <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" /> -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" name="viewport" />
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/font-awesome.css">
+    <!-- <link rel="stylesheet" href="/static/css/font-awesome.css"> -->
     <link rel="stylesheet" href="/static/css/unslider.css">
     <link rel="stylesheet" href="/static/css/index.css">
     <link rel="shortcut icon" href="/static/images/favicon.ico">
@@ -72,21 +72,17 @@
             <div class="background8">
                 <!-- special for mobile nav -->
             </div>
-            <div class="background9">
-                <!-- special for mobile nav -->
-            </div>
+            <div class="background9"></div>
 
-              <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav">
                 <li><a href="#company">我们是谁</a></li>
-                <li><a href="#team">团队成员</a></li>
                 <li><a href="#product">主要产品</a></li>
+                <li><a href="#team">团队成员</a></li>
                 <li><a href="#contact">联系我们</a></li>
                 <li><a href="http://deepeye.cc">解决方案</a></li>
 
               </ul>
           </div>
-
-
 
         </div>
       </nav>
@@ -135,7 +131,6 @@
           <div class="space67"></div>
 
           <div class="serial-title1">
-            <span class="serial-number">1</span>
             <div class="serial-content">
               <h2 class="h2">数字病理图像分析系统</h2>
               <div class="gotham_border"><p>Digital Pathology Analytics Systems</p></div>
@@ -176,15 +171,20 @@
           </div>
           <div class="space149"></div>
           <div class="serial-title2">
-            <span class="serial-number">2</span>
             <div class="serial-content">
-              <p class="h2">基于人工智能的数字病理图像分析模块</p>
+              <p class="h2">基于人工智能的数字病理图像处理和分析算法</p>
             </div>
           </div>
+          <div class="white_line"></div>
           <div class="explain_sm">
-            <p>病理数字图像的合成与增强，染色体归一与分离</p>
-            <p>细胞、腺体、组织的形态学自动分析与识别处理</p>
-            <p>组织病理/细胞病理与免疫组化组合判别肿瘤性质、分型分期的概率</p>
+            <ul class="scrollbar">
+              <li>数字病理图像可大致分为细胞、组织和免疫组化三大类。我们的算法涉及各类数字病理图像中各类细胞和腺体组织的识别、计数、分类和切割算法，以及染色、纹理和形态的分析，用于辅助判别癌症肿瘤的性质及分型分级分期，可极大提高病理医生的诊断效率和精准度。我们的算法可被广泛拓展和应用于乳腺癌，结直肠癌，肺癌，肝癌，前列腺癌等常见高发癌种。</li>
+              <li>免疫组化检查是乳腺癌当前最精准和通用的病理诊断手段之一，它通过化学反应使标记抗体的显色剂显色来确定组织和细胞内抗原（或抗体），对其进行定位、定性及相对定量的研究。因此，这涉及大量的关于病理图像中染色、组织和细胞核的数据的提取和分析。</li>
+              <li>核异型性评分也是一种常用的用于多种癌症的肿瘤分级的测量量化标准，常用于乳腺癌的组织病理图像中。这项评分涉及到细胞核的计量、及形态和外表的差异性和测量和分析。</li>
+              <li>子宫内膜白细胞数量超出正常，会导致白细胞攻击受精卵使其无法正常着床，从而导致不孕。其病理图像中二氨基联苯胺染色、基质细胞、白细胞、上皮组织细胞的的定位和计量，以及腺体的上皮组织区域的分割，在其病理诊断中扮演重要角色。</li>
+              <li>在以上场景中，我们的图像处理和分析算法均可快速且精准的将所需的相关数据提取出，用以帮助病理医生进行诊断和预后评估，极大降低病理医生在镜下的工作量，提高其工作效率和精准度，并最大程度地去除其判断的主观性。</li>
+              <li>原发于结直肠的腺体组织上的肿瘤是结直肠癌的最常见形式，我们研究成果可在结直肠的组织病理图像中快速和准确地识别和分割腺体，并提取其形态学和结构性的特征用于量化分析。在临床实践中，这些特征数据是病理医生评估预后和制定个体专属治疗方案的核心依据。</li>
+            </ul>
           </div>
           <!-- <div class="serial-title3">
             <div class="serial-content">
@@ -211,7 +211,7 @@
       <!-- market 部分 start -->
       <section id="market">
         <div class="container">
-          <p>市场规模</p>
+          <!-- <p>市场规模</p> -->
           <div class="market-size">
             <div class="background4"></div>
             <div class="banner">
@@ -234,14 +234,15 @@
                   <p class="h2">以上的速度增长</p>
                 </div></li>
                 <li><div class="market4">
-                  <p class="h2">作为精准医疗的最主要应用方向，</p>
-                  <p class="h2">分子病理的发展势不可挡，</p>
-                  <p class="h2">而分子病理依赖于数字病理的先验分析</p>
+                  <p class="explain">作为精准医疗的最主要应用方向，</p>
+                  <p class="h2"><span>分子病理</span>的发展势不可挡，</p>
+                  <p class="h2">而分子病理依赖于</p>
+                  <p class="h2"><span>数字病理</span>的先验分析。</p>
                 </div></li>
               </ul>
             </div>
+            <div class="space67"></div>
           </div>
-          <div class="space149"></div>
           <!-- <div class="h2">
             分子病理
           </div>
@@ -250,8 +251,6 @@
             <p>作为精准医疗的最主要应用方向，分子病理的发展势不可挡，而</p>
             <p>分子病理依赖于数字病理的先验分析</p>
           </div> -->
-          <div class="space149"></div>
-
 
         </div>
       </section>
@@ -259,11 +258,12 @@
       <!-- team 部分 start -->
       <section id="team">
         <div class="container">
-
           <!-- <p>团队成员</p> -->
-          <div class="space34"></div>
 
-          <div class="gotham_border"><p>HOW (AI) IS MAKING</p><p>A REAL DIFFRENCE?</p></div>
+          <div class="h2">
+            <p>核心成员</p>
+          </div>
+          <div class="gotham_border"><p>Core members</p></div>
           <div class="white_line"></div>
           <div class="members clearfix">
             <!-- 第一排 ceo coo -->
@@ -403,6 +403,7 @@
       <!-- team 部分 end -->
       <!-- join_us 部分 start -->
       <section id="join_us">
+        <div class="space111"></div>
         <div class="container">
           <div class="h2">
             招贤纳士
@@ -411,13 +412,40 @@
             JOIN US
           </div>
           <div class="white_line"></div>
-          <div class="explain_regular">
+          <ul class="jobs">
+            <!-- <li class="">
+              <div class="title">
+                UI 设计师
+                <div class="">
+                  <span class="horizontal-line"></span>
+                  <span class="vertical-bar"></span>
+                </div>
+              </div>
+              <div class="content">
+                <div class="descriptions">
+                  <div class="">
+                    职位描述：
+                  </div>
+                  <ul>
+                    <li>根据产品风格，用户体验及易用性设计并完成各级界面原型及后续设计；</li>
+                    <li>了解人机交互、用户体验，参与UI的整体设计，包括但不仅限于UI布局、操作流程和功能设计；</li>
+                    <li>完成界面相关标志、图标、图素的设计与绘制；</li>
+                    <li>完成界面相关的动态、动画设计；</li>
+                    <li>与程序保持沟通，跟进设计效果最终在产品的实现，保证设计品质与实现品质一致；</li>
+                    <li>负责产品的logo设计、icon设计等；</li>
+                    <li>负责对各产品宣传物料的设计，画册、单页、ppt等；</li>
+                  </ul>
+                </div>
+                <div class="requirements">
+
+                </div>
+              </div>
+            </li> -->
             <p>UI 设计师</p>
-            <p>市场运营</p>
             <p>前端开发工程师</p>
             <p>后端 Python 工程师</p>
             <p>计算机视觉算法工程师</p>
-          </div>
+          </ul>
 
 
         </div>

@@ -99,7 +99,7 @@ body{
   font-size: 1.5rem;
   font-weight: bold;
 }
-.explain_regular, .explain_regular > p {
+.explain_regular, .explain_regular > p, .title {
   font-family: $cnfont;
   font-size: 1.5rem;
   font-weight: normal;
@@ -149,51 +149,3 @@ footer {
     color: #585858;
   }
 }
-//
-// .footer{
-//     min-width: 640px;
-//     width: 100%;
-//     height: 320px;
-//     background-color: black;
-//     text-align: center;
-//     font-size: 18px;
-//     position: absolute;
-//     top:1213px;
-//     left: 0;
-//     z-index: 2
-// }
-// .footer1{
-//     height: 260px;
-//     color: #545454;
-//     background-color: black;
-//     padding-top: 50px;
-//     background-color: #1a1a1a;
-//     opacity: 0.5;
-//
-// }
-//
-
-
-
-
-// @media screen and (max-width: 760px) {
-//   .navbar-default .navbar-nav > li > a{
-//     color: white;
-//     height: 50px;
-//     line-height: 50px;
-//
-//   }
-//   .navbar-default .navbar-nav > li > a:hover{
-//     background-color: #6b53ca;
-//     border: 5px solid #6b53ca
-//
-//   }
-//
-//   .navbar-header{
-//       height: 80px;
-//   }
-//
-//   .circle img{
-//     width: 85px;
-//   }
-// }

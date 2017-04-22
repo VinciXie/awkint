@@ -1,4 +1,5 @@
-
+@charset "UTF-8";
+@import "variable";
 @mixin box-image($n) {
   .box:nth-child(#{$n}) {
     .img {
@@ -7,5 +8,29 @@
     &.active .img {
       background-image: url(../images/active/work#{$n}.png);
     }
+  }
+}
+
+@mixin scrollbar {
+  /*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+  .scrollbar::-webkit-scrollbar {
+      width: 3px;
+      // height: 16px;
+      // border: none;
+      background-color: #5536c5;
+  }
+  /*定义滚动条的轨道，内阴影及圆角*/
+  .scrollbar::-webkit-scrollbar-track {
+      -webkit-box-shadow: 0 none;
+      border-radius: 0;
+      // background-color: #f5f5f5;
+  }
+  /*定义滑块，内阴影及圆角*/
+  .scrollbar::-webkit-scrollbar-thumb {
+      /*width: 10px;*/
+      height: 20px;
+      border-radius: 10px;
+      -webkit-box-shadow: 0 none;
+      background-color: $blue-2;
   }
 }
