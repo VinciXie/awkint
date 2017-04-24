@@ -1,4 +1,5 @@
 $(function(){
+
   $(".box").click(function(){
     // 下拉菜单的效果
     var $this = $(this),
@@ -42,8 +43,8 @@ $(function(){
   });
 
   // 有两个下拉菜单是先展示出来的
-  $(".members").find(".tabContent").eq(0).slideDown()
-  $(".tabC").find(".tabContent").eq(0).slideDown()
+  // $(".members").find(".tabContent").eq(0).slideDown()
+  // $(".tabC").find(".tabContent").eq(0).slideDown()
 
 // 轮播图
   $(".banner").unslider({
@@ -61,7 +62,7 @@ $(function(){
 
   // background 3 和 5 的高度 和 body 一样高
   // $('body').height()
-  $('.background3,.background5').height(document.body.offsetHeight);
+  // $('.background3,.background5').height(document.body.offsetHeight);
 
   // 把三横变成 x
   $("#bs-example-navbar-collapse-1 > .nav > li > a").click(function() {

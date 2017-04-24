@@ -5,9 +5,13 @@
 @import "background";
 @import "mixin";
 
+body {
+  overflow: hidden;
+
+}
 .w1 > .navbar-default {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   background: none;
   border: none;
   .navbar-brand {
@@ -184,7 +188,7 @@
   .icon_explain, .flex_icon {
     display: -webkit-flex;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
     width: 100%;
     max-width: 480px;
@@ -388,6 +392,7 @@
       // width: 80%;
       max-width: 616px;
       height: 60vh;
+      max-height: 590px;
       text-align: left;
       list-style-type: disc;
       > li {

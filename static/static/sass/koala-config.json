@@ -4,7 +4,7 @@
 	"mappings": [
 		// {
 		// 	"src": "path/to/source",
-		// 	"dest": "../css/"
+		// 	"dest": "./css/"
 		// }
 	],
 
