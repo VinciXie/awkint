@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "variable";
+
 @font-face {
     font-family: 'gothamregular';
     src: url('../fonts/gotham-book-webfont.woff2') format('woff2'),
@@ -56,7 +56,7 @@ body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, d
 	padding: 0;
 }
 body {
-	font: $cnfont;
+	font: 1rem 'san_francisco_displaysemibold','宋体', Tahoma, Arial, sans-serif;
 	color: #555;
 	background-color: #ffffff;
 }
@@ -87,12 +87,12 @@ strong {
 a {
 	text-decoration: none;
 	color: #969696;
+	font-family: 'san_francisco_displaysemibold', Tahoma, Arial, sans-serif;
 }
 p{
 	/*font-family: 'san_francisco_displaysemibold';*/
 }
 a:hover {
-  color: none;
 	text-decoration: none;
 }
 ul, ol {
@@ -100,12 +100,14 @@ ul, ol {
 }
 h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
+	font-family: 'san_francisco_displaysemibold';
 }
 img {
 	border: none;
 }
 input{
-  outline-style: none;
+	font-family: 'san_francisco_displaysemibold';
+    outline-style: none;
 }
 
 .w1{

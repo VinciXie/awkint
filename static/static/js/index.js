@@ -24,7 +24,7 @@ $(function(){
       }
     }
     if($this.hasClass("active")) {
-      clearActive()
+      // clearActive()
     } else {
       clearActive()
       // 当前是取消选中状态

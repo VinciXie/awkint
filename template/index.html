@@ -6,14 +6,13 @@
     <!-- <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" /> -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" name="viewport" />
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/font-awesome.css">
-    <link rel="stylesheet" href="/css/unslider.css">
+    <!-- <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/common.css"> -->
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
-
     <style media="screen">
       .container {
         max-width: 768px;
+
       }
     </style>
   </head>
@@ -31,7 +30,8 @@
       <!-- 版心部分 start -->
       <nav class="navbar navbar-default">
         <div class="container">
-          <!-- <div class="navbar-header">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -39,10 +39,11 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#"><img class="my__center_y" src="images/logo.png" alt=""></a>
-          </div> -->
+          </div>
 
-          <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
               <li><a href="#company">我们是谁</a></li>
               <li><a href="#team">团队成员</a></li>
               <li><a href="#product">主要产品</a></li>
@@ -50,44 +51,7 @@
               <li><a href="http://deepeye.cc">解决方案</a></li>
 
             </ul>
-          </div> -->
-
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle">
-                  <!-- <span class="sr-only">Toggle navigation</span> -->
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-              <button type="button" class="btn-hide navbar-toggle">
-                  <span class="icon-x"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img class="my__center_y" src="images/logo.png" alt=""></a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <div class="background7">
-                <!-- special for mobile nav -->
-            </div>
-            <div class="background8">
-                <!-- special for mobile nav -->
-            </div>
-            <div class="background9">
-                <!-- special for mobile nav -->
-            </div>
-
-              <ul class="nav navbar-nav">
-                <li><a href="#company">我们是谁</a></li>
-                <li><a href="#team">团队成员</a></li>
-                <li><a href="#product">主要产品</a></li>
-                <li><a href="#contact">联系我们</a></li>
-                <li><a href="http://deepeye.cc">解决方案</a></li>
-
-              </ul>
-          </div>
-
-
-
+          </div><!-- /.navbar-collapse -->
         </div>
       </nav>
       <!-- 版心部分 end -->
@@ -100,7 +64,7 @@
           <!-- <p>Awakening Intelligence</p> -->
           <div class="explain_regular">
             <p>致力于智能和医疗数据的研究与应用，</p>
-            <p>为患者和医疗机构提供准确、快速、低成本的病理诊断整体解决方案。</p>
+            <p class="l">为患者和医疗机构提供准确、快速、低成本的病理诊断整体解决方案。</p>
           </div>
           <div class="">
             <div class="flex_icon">
@@ -136,14 +100,13 @@
           <div class="gotham_border"><p>HOW (AI) IS MAKING</p><p>A REAL DIFFRENCE?</p></div>
           <div class="white_line"></div>
           <div class="members clearfix">
-            <!-- 第一排 ceo coo -->
-            <div data-boxnumber=0 class="fl w50 box active">
+            <div data-boxnumber=0 class="fl w50 box">
               CEO
-              <span class='arrow'><img src="images/arrow-top.png" alt=""></span>
+              <span class='rotate-45'></span>
             </div>
             <div data-boxnumber=1 class="fl w50 box">
               COO
-              <span class='arrow'><img src="images/arrow-top.png" alt=""></span>
+              <span class='rotate-45'></span>
             </div>
             <div class="tabContent fl">
               <div class="fl w50 member-l">
@@ -152,92 +115,54 @@
                   <p class="h3">博士</p>
               </div>
               <div class="fl w50 member-r">
-                <div class="explain_regular">
-                  <p>英国华威大学</p>
-                  <p>计算机系博士毕业</p>
-                </div>
-                <div class="explain_regular">
-                  <p>华威大学计算机系组织图像分析实验室（前称生物图像分析实验室，数字病理分析领域的先行者）前成员</p>
-                  <!-- <p>华威大学计算机系</p>
-                  <p>组织图像分析实验室</p>
-                  <p>（前称生物图像分析实验室，</p>
-                  <p>数字病理分析领域的先行者）</p>
-                  <p>前成员</p> -->
-                </div>
-                <div class="explain_regular">
-                  <p>在多个国际学术会议和期刊发表上过多篇数字病理图像处理和分析论文</p>
-                </div>
+                <p>英国华威大学计算机系博士毕业</p>
+                <p>华威大学计算机系组织图像分析实验室（前称生物图像分析实验室，数字病理分析领域的先行者）前成员</p>
+                <p>在多个国际学术会议和期刊发表上过多篇数字病理图像处理和分析论文。</p>
               </div>
             </div>
             <div class="tabContent fl">
               <div class="fl w50 member-l">
-                  <p class="h2">徐丰</p>
+                  <p class="h2">李冠男</p>
                   <div class="wl"></div>
-                  <p class="h3">COO</p>
+                  <p class="h3">博士</p>
               </div>
               <div class="fl w50 member-r">
-                <div class="explain_regular">
-                  <p>诊断级远程医学</p>
-                  <p>影像服务平台</p>
-                  <p>www.51dupian.com</p>
-                  <p>联合创始人</p>
-                </div>
-                <div class="explain_regular">
-                  <p>多年互联网医疗创业经验</p>
-                </div>
+                  <p>英国华威大学计算机系博士毕业</p>
+                  <p>华威大学计算机系组织图像分析实验室（前称生物图像分析实验室，数字病理分析领域的先行者）前成员</p>
+                  <p>在多个国际学术会议和期刊发表上过多篇数字病理图像处理和分析论文。</p>
               </div>
             </div>
-            <!-- 第一排 CEO COO end -->
-            <!-- 第二排 科学顾问 政策顾问 -->
             <div data-boxnumber=2 class="fl w50 box">
               科学顾问
-              <span class='arrow'><img src="images/arrow-top.png" alt=""></span>
+              <span class='rotate-45'></span>
             </div>
             <div data-boxnumber=3 class="fl w50 box">
               政策顾问
-              <span class='arrow'><img src="images/arrow-top.png" alt=""></span>
+              <span class='rotate-45'></span>
             </div>
             <div class="tabContent fl">
               <div class="fl w50 member-l">
-                  <p class="h2">Nasir Rajpoot</p>
+                  <p class="h2">李冠男</p>
                   <div class="wl"></div>
-                  <p class="h3">教授</p>
+                  <p class="h3">博士</p>
               </div>
               <div class="fl w50 member-r">
-                <div class="explain_regular">
-                  <p>英国华威大学计算机系教授</p>
-                  <p>组织图像分析实验室创始人</p>
-                  <p>英国NHS数字病理卓越中心主任</p>
-                </div>
-                <div class="explain_regular">
-                  <p>国际知名数字病理图像专家</p>
-                  <p>IEEE高级会员</p>
-                  <p>美国计算机协会会员</p>
-                  <p>英国癌症研究协会会员</p>
-                  <p>欧洲癌症研究协会员</p>
-                </div>
-                <div class="explain_regular">
-                  <p>英国NHS乳腺癌人工智能</p>
-                  <p>病理诊断研究负责人</p>
-                </div>
+                  <p>李冠男</p>
+                  <p>博士</p>
               </div>
             </div>
             <div class="tabContent fl">
               <div class="fl w50 member-l">
-                  <p class="h2">韩川</p>
+                  <p class="h2">李冠男</p>
                   <div class="wl"></div>
-                  <p class="h3">政策顾问</p>
+                  <p class="h3">博士</p>
               </div>
               <div class="fl w50 member-r">
-                <div class="explain_regular">
-                  <p>北京大学生命科学华东产业研究院</p>
-                </div>
-                <div class="explain_regular">
-                  <p>技术转移总监</p>
-                </div>
+                  <p>李冠男</p>
+                  <p>博士</p>
               </div>
             </div>
-            <!-- 第二排 科学顾问 政策顾问 end -->
+
           </div>
         </div>
       </section>
@@ -250,48 +175,48 @@
           <div class="space67"></div>
 
           <div class="serial-title1">
-            <span class="serial-number">1</span>
+            <span class="serial-number">01</span>
             <div class="serial-content">
               <h2 class="h2">数字病理图像分析系统</h2>
-              <div class="gotham_border"><p>Digital Pathology Analytics Systems</p></div>
+              <div class="gotham_bord"><p>Digital Pathology Analytics Systems</p></div>
             </div>
           </div>
           <div class="white_line"></div>
           <div class="works w1 clearfix">
-            <div data-boxnumber=0 class="fl w20 box clearfix active">
-              <div class="img"></div>
-              <span class='arrow'><img src="images/arrow-top.png" alt=""></span>
-            </div>
-            <div data-boxnumber=1 class="fl w20 box clearfix">
-              <div class="img"></div>
-              <span class='arrow'><img src="images/arrow-top.png" alt=""></span>
-            </div>
-            <div data-boxnumber=2 class="fl w20 box clearfix">
-              <div class="img"></div>
-              <span class='arrow'><img src="images/arrow-top.png" alt=""></span>
-            </div>
-            <div data-boxnumber=3 class="fl w20 box clearfix">
-              <div class="img"></div>
-              <span class='arrow'><img src="images/arrow-top.png" alt=""></span>
-            </div>
             <div data-boxnumber=4 class="fl w20 box clearfix">
               <div class="img"></div>
-              <span class='arrow'><img src="images/arrow-top.png" alt=""></span>
+              <span class='rotate-45'></span>
+            </div>
+            <div data-boxnumber=5 class="fl w20 box clearfix">
+              <div class="img"></div>
+              <span class='rotate-45'></span>
+            </div>
+            <div data-boxnumber=6 class="fl w20 box clearfix">
+              <div class="img"></div>
+              <span class='rotate-45'></span>
+            </div>
+            <div data-boxnumber=7 class="fl w20 box clearfix">
+              <div class="img"></div>
+              <span class='rotate-45'></span>
+            </div>
+            <div data-boxnumber=8 class="fl w20 box clearfix">
+              <div class="img"></div>
+              <span class='rotate-45'></span>
             </div>
 
           </div>
           <div class="tabC">
             <div class="tabContent">
-              <p class="my__center">数字化病理样本的存储、展现、处理（标记/切割/计数）、诊断、审核、交互</p>
+              <p>数字化病理样本的存储、展现、处理（标记/切割/计数）、诊断、审核、交互</p>
             </div>
-            <div class="tabContent"><p class="my__center">数字病理理远程会诊</p></div>
-            <div class="tabContent"><p class="my__center">科室内外协作</p></div>
-            <div class="tabContent"><p class="my__center">可与CIS、EMR整合，实现以临床或患者为中⼼心的数据集成</p></div>
-            <div class="tabContent"><p class="my__center">基于人工智能的数字病理图像分析算法与应用（现阶段：乳腺癌的免疫组化图像中细胞量化及分析）</p></div>
+            <div class="tabContent"><p>数字病理理远程会诊</p></div>
+            <div class="tabContent"><p>科室内外协作</p></div>
+            <div class="tabContent"><p>可与CIS、EMR整合，实现以临床或患者为中⼼心的数据集成</p></div>
+            <div class="tabContent"><p>基于人工智能的数字病理图像分析算法与应用（现阶段：乳腺癌的免疫组化图像中细胞量化及分析）</p></div>
           </div>
           <div class="space149"></div>
           <div class="serial-title2">
-            <span class="serial-number">2</span>
+            <span class="serial-number">02</span>
             <div class="serial-content">
               <p class="h3">病理诊断中心</p>
               <p class="h3">对外提供病理诊断外包辅助</p>
@@ -309,11 +234,11 @@
               <p class="h3">人工智能训练集</p>
               <p class="h3">生产中心</p>
             </div>
-            <span class="serial-number">3</span>
+            <span class="serial-number">03</span>
           </div>
 
           <div class="serial-title4">
-            <span class="serial-number">4</span>
+            <span class="serial-number">04</span>
             <div class="serial-content">
               <p class="h3">病理诊断</p>
               <p class="h3">人工智能训练集</p>
@@ -330,28 +255,16 @@
         <div class="container">
           <p>市场规模</p>
           <div class="market-size">
-            <div class="background4"></div>
-            <div class="banner">
-              <ul>
-                <li><div class="">
-                  <p class="explain">中国2015年新增</p>
-                  <p class="h2">癌症患者<span class="">429.2万</span></p>
-                  <p class="h2">死亡癌症患者<span class="">281.4万</span></p>
-                  <p class="explain">(CA《中国癌症统计》)</p>
-                </div></li>
-                <li><div class="market2">
-                  <p class="h2">组织病理</p>
-                  <p class="h2">细胞病理</p>
-                  <p class="h2">免疫组化</p>
-                  <p class="h2">约<span class="">200亿人民币/年</span></p>
-                </div></li>
-                <li><div class="market3">
-                  <p class="h2">病理诊断外包已达到</p>
-                  <p class="h2"><span>5-10亿/年，</span>并以<span>30%/年</span></p>
-                  <p class="h2">以上的速度增长</p>
-                </div></li>
-              </ul>
+            <div class="background4">
+
             </div>
+            <p class="explain">中国2015年新增</p>
+            <p class="h2">癌症患者<span class="">429.2万</span></p>
+            <p class="h2">死亡癌症患者<span class="">281.4万</span></p>
+            <p class="explain">(CA《中国癌症统计》)</p>
+          </div>
+          <div class="slider">
+            slider
           </div>
           <div class="space149"></div>
           <div class="h2">
@@ -411,7 +324,7 @@
             <p>商务合作：biz@deepeye.cc</p>
             <p>媒体合作：biz@deepeye.cc</p>
             <p>招贤纳士：biz@deepeye.cc</p>
-            <p>地址：上海市浦东新区博霞路22号408室</p>
+            <p>地址：上海市浦东新区</p>
           </div>
 
         </div>
@@ -426,17 +339,13 @@
           </div>
         </div>
       </footer>
-      <a href="#" class="scrollup"><img class="my__center" src="images/arrow-top.png" alt=""></a>
 
     </div>
     <script src="js/jquery-3.2.0.min.js" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
-    <script src="js/unslider.js" charset="utf-8"></script>
-    <script src="js/jquery.scrollTo.min.js" charset="utf-8"></script>
-    <script src="js/jquery.localScroll.min.js" charset="utf-8"></script>
     <script src="js/index.js" charset="utf-8"></script>
-    <!-- <script>
+    <script>
       console.log('document.body.offsetHeight', document.body.offsetHeight);
-    </script> -->
+    </script>
   </body>
 </html>
