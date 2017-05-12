@@ -47,12 +47,11 @@
   .background4 {
     // 轮播图位置的
     position: absolute;
-    width: 430%;
+    width: 800%;
     height: 250%;
-    // transform: translate(-50%,-36%);
-    transform: rotate(14deg) translate(-87%,20%) skewX(-68deg) skewY(-6deg);
+    transform: rotate(13deg) translate(-108%, 64%) skewX(-71deg) skewY(-8deg);
     @media screen and (max-width: 760px) {
-      transform: rotate(14deg) translate(-84%,0) skewX(-68deg) skewY(-6deg);
+      transform: rotate(14deg) translate(-84%,15%) skewX(-71deg) skewY(-8deg);
     }
 
     background-color: $black;
@@ -66,13 +65,13 @@
     position: absolute;
     left: 50%;
     width: 150%;
-    height: calc(250px + 100%);
+    height: calc(300px + 110%);
     transform: rotate(7deg) translate(-50%,90px);
     @media screen and (max-width: 760px) {
       transform: rotate(7deg) translate(-50%,40px);
     }
     vertical-align: bottom;
-    background-color: $white;
+    background-color: $black;
     // -webkit-clip-path: polygon(0 0, 100% 42%, 100% 100%, 0% 100%);
     // clip-path: polygon(0 0, 100% 42%, 100% 100%, 0% 100%);
     z-index: -1;

@@ -1,0 +1,5 @@
+@import "compass/utilities/sprites";
+$page-icons-sprite-dimensions: true;
+@import "page-icons/*.png";
+
+@include  all-page-icons-sprites;

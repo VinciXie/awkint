@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>微瞰智能</title>
-    <!-- <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" /> -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" name="viewport" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/common.css"> -->
-    <link rel="stylesheet" href="./css/index.css">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/static/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/static/css/unslider.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+
     <style media="screen">
       .container {
         max-width: 768px;
-
       }
     </style>
   </head>
@@ -24,282 +24,400 @@
       <div class="background3">
         <!-- 页面右边的透明背景区域 -->
       </div>
-      <div class="background5">
-        <!-- 页面左边的透明背景区域 -->
-      </div>
+      <!-- <div class="background5"></div> -->
       <!-- 版心部分 start -->
       <nav class="navbar navbar-default">
         <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img class="my__center_y" src="images/logo.png" alt=""></a>
+              <button type="button" class="navbar-toggle">
+                  <!-- <span class="sr-only">Toggle navigation</span> -->
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <button type="button" class="btn-hide navbar-toggle">
+                  <span class="icon-x"></span>
+              </button>
+              <!-- <a class="navbar-brand" href="#">
+                <img class="my__center_y" src="/static/images/logo.png" alt="">
+              </a> -->
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
-              <li><a href="#company">我们是谁</a></li>
-              <li><a href="#team">团队成员</a></li>
-              <li><a href="#product">主要产品</a></li>
-              <li><a href="#contact">联系我们</a></li>
-              <li><a href="http://deepeye.cc">解决方案</a></li>
+            <div class="background7">
+                <!-- special for mobile nav -->
+            </div>
+            <!-- <div class="background8"></div> -->
+            <div class="background9"></div>
 
-            </ul>
-          </div><!-- /.navbar-collapse -->
+            <ul class="nav navbar-nav">
+                <li><a class="explain_regular" href="#company">我们是谁</a></li>
+                <li><a class="explain_regular" href="#product">主要产品</a></li>
+                <li><a class="explain_regular" href="#team">团队成员</a></li>
+                <li><a class="explain_regular" href="#contact">联系我们</a></li>
+                <li><a class="explain_regular" href="http://deepeye.cc">解决方案</a></li>
+
+              </ul>
+          </div>
+
         </div>
       </nav>
       <!-- 版心部分 end -->
       <!-- company 部分 start -->
       <section id="company">
         <div class="container">
-
           <!-- <p>我们是</p> -->
-          <h1 class="h1">微瞰智能</h1>
+          <h1 class="h1">
+            <div class="page-icons-logo"></div>
+            <!-- <img src="/static/images/logo.png" alt=""> -->
+            <span>微瞰智能</span>
+          </h1>
           <!-- <p>Awakening Intelligence</p> -->
           <div class="explain_regular">
-            <p>致力于智能和医疗数据的研究与应用，</p>
-            <p class="l">为患者和医疗机构提供准确、快速、低成本的病理诊断整体解决方案。</p>
+            <p>为患者提供精准、高效和普惠的病理诊断，</p>
+            <p>为医生提供便捷和高效的辅助病理诊断系统，</p>
+            <p>促进优质病理诊断资源的下沉与优化配置进而促进分级治疗。</p>
           </div>
           <div class="">
             <div class="flex_icon">
-              <div class="img"><img src="images/准确.png" alt=""></div>
-              <div class="img"><img src="images/快速.png" alt=""></div>
-              <div class="img"><img src="images/低成本.png" alt=""></div>
+              <div class="img page-icons-accurate">
+                <!-- <img src="/static/images/精准.png" alt=""> -->
+              </div>
+              <div class="img page-icons-efficient">
+                <!-- <img src="/static/images/高效.png" alt=""> -->
+              </div>
+              <div class="img page-icons-favorable">
+                <!-- <img src="/static/images/普惠.png" alt=""> -->
+              </div>
             </div>
             <div class="icon_explain explain_regular">
-              <span class="">准确</span>
-              <span class="">快速</span>
-              <span class="">低成本</span>
+              <span class="">精准</span>
+              <span class="">高效</span>
+              <span class="">普惠</span>
             </div>
           </div>
-          <div class="space111"></div>
+          <!-- <div class="space111"></div>
           <h2 class="h2">愿景</h2>
-          <div class="white_line"></div>
           <div class="explain_regular">
-            <p>为患者提供准确、快速、普惠的病理诊断</p>
-            <p>为医生提供便捷、高效的辅助病理诊断系统</p>
-            <p>促进优质病理诊断资源的下沉与优化配置，促进分级治疗</p>
-          </div>
-
+            <p>为患者提供精准、高效和普惠的病理诊断</p>
+            <p>为医生提供便捷和高效的辅助病理诊断系统</p>
+            <p>促进优质病理诊断资源的下沉与优化配置进而促进分级治疗</p>
+          </div> -->
         </div>
       </section>
       <!-- company 部分 end -->
-      <!-- team 部分 start -->
-      <section id="team">
+
+      <!-- market 部分 start -->
+      <section id="market">
         <div class="container">
-
-          <p>团队成员</p>
-          <div class="space34"></div>
-
-          <div class="gotham_border"><p>HOW (AI) IS MAKING</p><p>A REAL DIFFRENCE?</p></div>
-          <div class="white_line"></div>
-          <div class="members clearfix">
-            <div data-boxnumber=0 class="fl w50 box">
-              CEO
-              <span class='rotate-45'></span>
+          <!-- <p>市场规模</p> -->
+          <div class="market-size">
+            <div class="background4"></div>
+            <div class="banner">
+              <ul>
+                <li><div class="">
+                  <p class="explain">中国2015年新增</p>
+                  <p class="h2">癌症患者<span class="">429.2万</span></p>
+                  <p class="h2">死亡癌症患者<span class="">281.4万</span></p>
+                  <p class="explain">(CA《中国癌症统计》)</p>
+                </div></li>
+                <li><div class="market2">
+                  <p class="h2">组织病理</p>
+                  <p class="h2">细胞病理</p>
+                  <p class="h2">免疫组化</p>
+                  <p class="h2">约<span class="">200亿人民币/年</span></p>
+                </div></li>
+                <li><div class="market3">
+                  <p class="h2">病理诊断外包已达到</p>
+                  <p class="h2"><span>5-10亿/年，</span>并以<span>30%/年</span></p>
+                  <p class="h2">以上的速度增长</p>
+                </div></li>
+                <li><div class="market4">
+                  <p class="explain">作为精准医疗的最主要应用方向，</p>
+                  <p class="h2"><span>分子病理</span>的发展势不可挡，</p>
+                  <p class="h2">而分子病理依赖于</p>
+                  <p class="h2"><span>数字病理</span>的先验分析。</p>
+                </div></li>
+              </ul>
             </div>
-            <div data-boxnumber=1 class="fl w50 box">
-              COO
-              <span class='rotate-45'></span>
-            </div>
-            <div class="tabContent fl">
-              <div class="fl w50 member-l">
-                  <p class="h2">李冠男</p>
-                  <div class="wl"></div>
-                  <p class="h3">博士</p>
-              </div>
-              <div class="fl w50 member-r">
-                <p>英国华威大学计算机系博士毕业</p>
-                <p>华威大学计算机系组织图像分析实验室（前称生物图像分析实验室，数字病理分析领域的先行者）前成员</p>
-                <p>在多个国际学术会议和期刊发表上过多篇数字病理图像处理和分析论文。</p>
-              </div>
-            </div>
-            <div class="tabContent fl">
-              <div class="fl w50 member-l">
-                  <p class="h2">李冠男</p>
-                  <div class="wl"></div>
-                  <p class="h3">博士</p>
-              </div>
-              <div class="fl w50 member-r">
-                  <p>英国华威大学计算机系博士毕业</p>
-                  <p>华威大学计算机系组织图像分析实验室（前称生物图像分析实验室，数字病理分析领域的先行者）前成员</p>
-                  <p>在多个国际学术会议和期刊发表上过多篇数字病理图像处理和分析论文。</p>
-              </div>
-            </div>
-            <div data-boxnumber=2 class="fl w50 box">
-              科学顾问
-              <span class='rotate-45'></span>
-            </div>
-            <div data-boxnumber=3 class="fl w50 box">
-              政策顾问
-              <span class='rotate-45'></span>
-            </div>
-            <div class="tabContent fl">
-              <div class="fl w50 member-l">
-                  <p class="h2">李冠男</p>
-                  <div class="wl"></div>
-                  <p class="h3">博士</p>
-              </div>
-              <div class="fl w50 member-r">
-                  <p>李冠男</p>
-                  <p>博士</p>
-              </div>
-            </div>
-            <div class="tabContent fl">
-              <div class="fl w50 member-l">
-                  <p class="h2">李冠男</p>
-                  <div class="wl"></div>
-                  <p class="h3">博士</p>
-              </div>
-              <div class="fl w50 member-r">
-                  <p>李冠男</p>
-                  <p>博士</p>
-              </div>
-            </div>
-
+            <div class="space67"></div>
           </div>
         </div>
       </section>
-      <!-- team 部分 end -->
+      <!-- market 部分 end -->
+      <!-- team 部分 start -->
       <div class="space149"></div>
+
       <!-- product 部分 start -->
       <section id="product">
         <div class="container">
-          <p>主要产品</p>
-          <div class="space67"></div>
+          <!-- <p>主要产品</p> -->
+          <!-- <div class="space67"></div> -->
 
           <div class="serial-title1">
-            <span class="serial-number">01</span>
             <div class="serial-content">
               <h2 class="h2">数字病理图像分析系统</h2>
-              <div class="gotham_bord"><p>Digital Pathology Analytics Systems</p></div>
             </div>
           </div>
-          <div class="white_line"></div>
           <div class="works w1 clearfix">
+            <div data-boxnumber=0 class="fl w20 box clearfix active">
+              <div class="img page-icons-work1"></div>
+              <span class='arrow'>
+                <img src="/static/images/arrow-top.png" alt="">
+              </span>
+            </div>
+            <div data-boxnumber=1 class="fl w20 box clearfix">
+              <div class="img page-icons-work2"></div>
+              <span class='arrow'>
+                <img src="/static/images/arrow-top.png" alt="">
+              </span>
+            </div>
+            <div data-boxnumber=2 class="fl w20 box clearfix">
+              <div class="img page-icons-work3"></div>
+              <span class='arrow'>
+                <img src="/static/images/arrow-top.png" alt="">
+              </span>
+            </div>
+            <div data-boxnumber=3 class="fl w20 box clearfix">
+              <div class="img page-icons-work4"></div>
+              <span class='arrow'>
+                <img src="/static/images/arrow-top.png" alt="">
+              </span>
+            </div>
             <div data-boxnumber=4 class="fl w20 box clearfix">
-              <div class="img"></div>
-              <span class='rotate-45'></span>
-            </div>
-            <div data-boxnumber=5 class="fl w20 box clearfix">
-              <div class="img"></div>
-              <span class='rotate-45'></span>
-            </div>
-            <div data-boxnumber=6 class="fl w20 box clearfix">
-              <div class="img"></div>
-              <span class='rotate-45'></span>
-            </div>
-            <div data-boxnumber=7 class="fl w20 box clearfix">
-              <div class="img"></div>
-              <span class='rotate-45'></span>
-            </div>
-            <div data-boxnumber=8 class="fl w20 box clearfix">
-              <div class="img"></div>
-              <span class='rotate-45'></span>
+              <div class="img page-icons-work5"></div>
+              <span class='arrow'>
+                <img src="/static/images/arrow-top.png" alt="">
+              </span>
             </div>
 
           </div>
           <div class="tabC">
-            <div class="tabContent">
-              <p>数字化病理样本的存储、展现、处理（标记/切割/计数）、诊断、审核、交互</p>
+            <div class="tabContent" style="display: block;">
+              <p class="my__center">数字化病理样本的存储、展现、处理（标记/切割/计数）、诊断、审核、交互</p>
             </div>
-            <div class="tabContent"><p>数字病理理远程会诊</p></div>
-            <div class="tabContent"><p>科室内外协作</p></div>
-            <div class="tabContent"><p>可与CIS、EMR整合，实现以临床或患者为中⼼心的数据集成</p></div>
-            <div class="tabContent"><p>基于人工智能的数字病理图像分析算法与应用（现阶段：乳腺癌的免疫组化图像中细胞量化及分析）</p></div>
+            <div class="tabContent"><p class="my__center">数字病理理远程会诊</p></div>
+            <div class="tabContent"><p class="my__center">科室内外协作</p></div>
+            <div class="tabContent"><p class="my__center">可与CIS、EMR整合，实现以临床或患者为中⼼心的数据集成</p></div>
+            <div class="tabContent"><p class="my__center">基于人工智能的数字病理图像分析模块（包括肺癌，乳腺癌，结直肠癌，肝癌，胃癌等肿瘤数字病理图像分析模块）</p></div>
           </div>
           <div class="space149"></div>
           <div class="serial-title2">
-            <span class="serial-number">02</span>
             <div class="serial-content">
-              <p class="h3">病理诊断中心</p>
-              <p class="h3">对外提供病理诊断外包辅助</p>
-              <p class="h3">以及基于云端的IHC人工智能辅助诊断服务</p>
+              <p class="h2">基于人工智能的 <br>数字病理图像处理和分析算法</p>
             </div>
           </div>
           <div class="explain_sm">
-            <p>病理数字图像的合成与增强，染色体归一与分离</p>
-            <p>细胞、腺体、组织的形态学自动分析与识别处理</p>
-            <p>组织病理/细胞病理与免疫组化组合判别肿瘤性质、分型分期的概率</p>
+            <ul class="scrollbar">
+              <li>数字病理图像可大致分为细胞、组织和免疫组化三大类。我们的算法涉及各类数字病理图像中各类细胞和腺体组织的识别、计数、分类和切割算法，以及染色、纹理和形态的分析，用于辅助判别癌症肿瘤的性质及分型分级分期，可极大提高病理医生的诊断效率和精准度。我们的算法可被广泛拓展和应用于乳腺癌，结直肠癌，肺癌，肝癌，前列腺癌等常见高发癌种。</li>
+              <li>免疫组化检查是乳腺癌当前最精准和通用的病理诊断手段之一，它通过化学反应使标记抗体的显色剂显色来确定组织和细胞内抗原（或抗体），对其进行定位、定性及相对定量的研究。因此，这涉及大量的关于病理图像中染色、组织和细胞核的数据的提取和分析。</li>
+              <li>核异型性评分也是一种常用的用于多种癌症的肿瘤分级的测量量化标准，常用于乳腺癌的组织病理图像中。这项评分涉及到细胞核的计量、及形态和外表的差异性和测量和分析。</li>
+              <li>子宫内膜白细胞数量超出正常，会导致白细胞攻击受精卵使其无法正常着床，从而导致不孕。其病理图像中二氨基联苯胺染色、基质细胞、白细胞、上皮组织细胞的的定位和计量，以及腺体的上皮组织区域的分割，在其病理诊断中扮演重要角色。</li>
+              <li>在以上场景中，我们的图像处理和分析算法均可快速且精准的将所需的相关数据提取出，用以帮助病理医生进行诊断和预后评估，极大降低病理医生在镜下的工作量，提高其工作效率和精准度，并最大程度地去除其判断的主观性。</li>
+              <li>原发于结直肠的腺体组织上的肿瘤是结直肠癌的最常见形式，我们研究成果可在结直肠的组织病理图像中快速和准确地识别和分割腺体，并提取其形态学和结构性的特征用于量化分析。在临床实践中，这些特征数据是病理医生评估预后和制定个体专属治疗方案的核心依据。</li>
+            </ul>
           </div>
-          <div class="serial-title3">
-            <div class="serial-content">
-              <p class="h3">病理诊断</p>
-              <p class="h3">人工智能训练集</p>
-              <p class="h3">生产中心</p>
-            </div>
-            <span class="serial-number">03</span>
-          </div>
-
-          <div class="serial-title4">
-            <span class="serial-number">04</span>
-            <div class="serial-content">
-              <p class="h3">病理诊断</p>
-              <p class="h3">人工智能训练集</p>
-              <p class="h3">开放平台与数据库</p>
-            </div>
-          </div>
-
         </div>
+        <div class="space149"></div>
+
       </section>
       <!-- product 部分 end -->
       <div class="space149"></div>
-      <!-- market 部分 start -->
-      <section id="market">
+      <section id="team">
         <div class="container">
-          <p>市场规模</p>
-          <div class="market-size">
-            <div class="background4">
-
-            </div>
-            <p class="explain">中国2015年新增</p>
-            <p class="h2">癌症患者<span class="">429.2万</span></p>
-            <p class="h2">死亡癌症患者<span class="">281.4万</span></p>
-            <p class="explain">(CA《中国癌症统计》)</p>
-          </div>
-          <div class="slider">
-            slider
-          </div>
-          <div class="space149"></div>
+          <!-- <p>团队成员</p> -->
+          <div class="space67"></div>
           <div class="h2">
-            分子病理
+            <p>团队成员</p>
           </div>
-          <div class="white_line"></div>
-          <div class="explain_regular">
-            <p>作为精准医疗的最主要应用方向，分子病理的发展势不可挡，而</p>
-            <p>分子病理依赖于数字病理的先验分析</p>
+          <!-- <div class="gotham_border"><p>Core members</p></div> -->
+          <div class="members clearfix">
+            <!-- 第一个 ceo -->
+            <div data-boxnumber=0 class="box active">
+              创始人
+              <!-- <span class='arrow'><img src="/static/images/arrow-top.png" alt=""></span> -->
+              <div class="plus">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1,.cls-2{fill:none;stroke:#f9f8f4;stroke-linejoin:round;stroke-width:2px;}</style></defs><title>加号</title><g id="图层_2" data-name="图层 2"><g id="图层_1-2" data-name="图层 1"><line class="cls-1" y1="10" x2="20" y2="10"/><line class="cls-2" x1="10" x2="10" y2="20"/></g></g></svg>
+              </div>
+              <div class="gray-line"></div>
+            </div>
+            <div class="tabContent" style="display: block;">
+              <div class="member-l">
+                  <p class="h2">李冠男</p>
+                  <div class="wl"></div>
+                  <p class="explain">博士</p>
+              </div>
+              <div class="member-r">
+                <ul class="explain_regular">
+                  <li>英国华威大学计算机系博士毕业</li>
+                  <li>华威大学计算机系组织图像分析实验室（生物图像分析实验室，数字病理分析领域的先行者）成员</li>
+                  <li>在多个国际学术会议和期刊发表上过多篇数字病理图像处理和分析论文</li>
+                </ul>
+              </div>
+            </div>
+            <div data-boxnumber=1 class="box">
+              联合创始人
+              <!-- <span class='arrow'><img src="/static/images/arrow-top.png" alt=""></span> -->
+              <div class="plus">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1,.cls-2{fill:none;stroke:#f9f8f4;stroke-linejoin:round;stroke-width:2px;}</style></defs><title>加号</title><g id="图层_2" data-name="图层 2"><g id="图层_1-2" data-name="图层 1"><line class="cls-1" y1="10" x2="20" y2="10"/><line class="cls-2" x1="10" x2="10" y2="20"/></g></g></svg>
+              </div>
+              <div class="gray-line"></div>
+            </div>
+            <div class="tabContent">
+              <div class="member-l">
+                  <p class="h2">徐丰</p>
+                  <div class="wl"></div>
+                  <p class="explain">COO</p>
+              </div>
+              <div class="member-r">
+                <ul class="explain_regular">
+                  <li>诊断级远程医学影像服务平台 “51读片” 前联合创始人</li>
+                  <li>多年互联网医疗从业及创业经历</li>
+                </ul>
+              </div>
+            </div>
+            <div data-boxnumber=2 class="box">
+              科研顾问
+              <!-- <span class='arrow'><img src="/static/images/arrow-top.png" alt=""></span> -->
+              <div class="plus">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1,.cls-2{fill:none;stroke:#f9f8f4;stroke-linejoin:round;stroke-width:2px;}</style></defs><title>加号</title><g id="图层_2" data-name="图层 2"><g id="图层_1-2" data-name="图层 1"><line class="cls-1" y1="10" x2="20" y2="10"/><line class="cls-2" x1="10" x2="10" y2="20"/></g></g></svg>
+              </div>
+              <div class="gray-line"></div>
+            </div>
+            <div class="tabContent">
+              <div class="member-l">
+                  <p class="h2">Nasir Rajpoot</p>
+                  <div class="wl"></div>
+                  <p class="explain">教授</p>
+              </div>
+              <div class="member-r">
+                <ul class="explain_regular">
+                  <li>英国华威大学计算机系教授</li>
+                  <li>组织图像分析实验室创始人</li>
+                  <li>英国NHS数字病理卓越中心主任</li>
+                </ul>
+                <ul class="explain_regular">
+                  <li>国际知名数字病理图像专家</li>
+                  <li>IEEE高级会员</li>
+                  <li>美国计算机协会会员</li>
+                  <li>英国癌症研究协会会员</li>
+                  <li>欧洲癌症研究协会员</li>
+                </ul>
+                <ul class="explain_regular">
+                  <li>英国NHS乳腺癌人工智能</li>
+                  <li>病理诊断研究负责人</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="space149"></div>
-
-
         </div>
       </section>
-      <!-- market 部分 end -->
-
+      <!-- team 部分 end -->
       <!-- join_us 部分 start -->
       <section id="join_us">
         <div class="container">
           <div class="h2">
             招贤纳士
           </div>
-          <div class="gotham_border">
-            JOIN US
-          </div>
-          <div class="white_line"></div>
-          <div class="explain_regular">
-            <p>UI 设计师</p>
-            <p>市场运营</p>
-            <p>前端开发工程师</p>
-            <p>后端 Python 工程师</p>
-            <p>计算机视觉算法工程师</p>
-          </div>
 
+          <div class="members clearfix">
+            <div data-boxnumber=0 class="box active">
+              UI设计师
+              <!-- <span class='arrow'><img src="/static/images/arrow-top.png" alt=""></span> -->
+              <div class="plus">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1,.cls-2{fill:none;stroke:#f9f8f4;stroke-linejoin:round;stroke-width:2px;}</style></defs><title>加号</title><g id="图层_2" data-name="图层 2"><g id="图层_1-2" data-name="图层 1"><line class="cls-1" y1="10" x2="20" y2="10"/><line class="cls-2" x1="10" x2="10" y2="20"/></g></g></svg>
+              </div>
+              <div class="gray-line"></div>
+            </div>
+            <div class="tabContent" style="display: block;">
+              <div class="member-r scrollbar">
+                <ul class="explain_regular">
+                  <div class="description">
+                    职位描述：
+                  </div>
+                  <li>根据产品风格，用户体验及易用性设计并完成各级界面原型及后续设计；</li>
+                  <li>了解人机交互、用户体验，参与UI的整体设计，包括但不仅限于UI布局、操作流程和功能设计；</li>
+                  <li>完成界面相关标志、图标、图素的设计与绘制；</li>
+                  <li>完成界面相关的动态、动画设计；</li>
+                  <li>与程序保持沟通，跟进设计效果最终在产品的实现，保证设计品质与实现品质一致；</li>
+                  <li>负责产品的logo设计、icon设计等；</li>
+                  <li>负责对各产品宣传物料的设计，画册、单页、ppt等；</li>
+                </ul>
+                <ul class="explain_regular">
+                  <div class="description">
+                    任职要求：
+                  </div>
+                  <li>根据产品风格，用户体验及易用性设计并完成各级界面原型及后续设计；</li>
+                  <li>了解人机交互、用户体验，参与UI的整体设计，包括但不仅限于UI布局、操作流程和功能设计；</li>
+                  <li>完成界面相关标志、图标、图素的设计与绘制；</li>
+                  <li>完成界面相关的动态、动画设计；</li>
+                  <li>与程序保持沟通，跟进设计效果最终在产品的实现，保证设计品质与实现品质一致；</li>
+                  <li>负责产品的logo设计、icon设计等；</li>
+                  <li>负责对各产品宣传物料的设计，画册、单页、ppt等；</li>
+                </ul>
+              </div>
+            </div>
+            <div data-boxnumber=1 class="box">
+              前端开发工程师
+              <div class="plus">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1,.cls-2{fill:none;stroke:#f9f8f4;stroke-linejoin:round;stroke-width:2px;}</style></defs><title>加号</title><g id="图层_2" data-name="图层 2"><g id="图层_1-2" data-name="图层 1"><line class="cls-1" y1="10" x2="20" y2="10"/><line class="cls-2" x1="10" x2="10" y2="20"/></g></g></svg>
+              </div>
+              <div class="gray-line"></div>
+            </div>
+            <div class="tabContent">
+              <div class="member-r scrollbar">
+                <ul class="explain_regular">
+                  <div class="description">
+                    职位描述：
+                  </div>
+                  <li>Web前端开发-基于Reactjs进行Webapp开发</li>
+                  <li>熟悉主流前端框架ReactJS用以够搭建公司项目的基本前端框架；</li>
+                  <li>熟练使用ReactJS，JQuery及JavaScript；</li>
+                  <li>熟练使用H5及Less或Sass；</li>
+                  <li>熟练使用前端开发工具Webpack；</li>
+                  <li>英语读写流利者优先；</li>
+                  <li>全栈工程师和技术宅优先；</li>
+                  <li>性格开朗，对未知挑战充满激情和信心，善于独立解决疑难杂症者优先；</li>
+                </ul>
+              </div>
+            </div>
+            <div data-boxnumber=2 class="box">
+              后端Python工程师
+              <div class="plus">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1,.cls-2{fill:none;stroke:#f9f8f4;stroke-linejoin:round;stroke-width:2px;}</style></defs><title>加号</title><g id="图层_2" data-name="图层 2"><g id="图层_1-2" data-name="图层 1"><line class="cls-1" y1="10" x2="20" y2="10"/><line class="cls-2" x1="10" x2="10" y2="20"/></g></g></svg>
+              </div>
+              <div class="gray-line"></div>
+            </div>
+            <div class="tabContent">
+              <div class="member-r scrollbar">
+                <ul class="explain_regular">
+                  <div class="description">
+                    职位描述：
+                  </div>
+                  <li>全栈网络开发工程师</li>
+                  <li>独立完成或带领完成过项目，此岗位为主程和构架师，主要负责Web应用后端开发</li>
+                  <li>要求熟练使用Python及Flask框架，MongoDB及PostgreSQL等数据库，同时熟悉前端开发。</li>
+                </ul>
+              </div>
+            </div>
+            <div data-boxnumber=3 class="box">
+              计算机视觉算法工程师
+              <div class="plus">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-1,.cls-2{fill:none;stroke:#383c3c;stroke-linejoin:round;stroke-width:2px;}</style></defs><title>加号</title><g id="图层_2" data-name="图层 2"><g id="图层_1-2" data-name="图层 1"><line class="cls-1" y1="10" x2="20" y2="10"/><line class="cls-2" x1="10" x2="10" y2="20"/></g></g></svg>
+              </div>
+              <div class="gray-line"></div>
+            </div>
+            <div class="tabContent">
+              <div class="member-r scrollbar">
+                <!-- <ul class="explain_regular">
+                  <div class="description">
+                    职位描述：
+                  </div>
+                  <li>根据产品风格，用户体验及易用性设计并完成各级界面原型及后续设计；</li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
 
         </div>
       </section>
@@ -315,18 +433,26 @@
           <div class="h2">
             联系我们
           </div>
-          <div class="gotham_border">
-            CONTACT US
+          <div class="contact-information">
+            <p>
+              <i class="page-icons-telephone">
+                <!-- <img src="/static/images/电话.png" alt=""> -->
+              </i>
+              电话：021-67991207
+            </p>
+              <p>
+                <i class="page-icons-mail">
+                <!-- <img src="/static/images/邮箱.png" alt=""> -->
+              </i>
+              联系邮箱：biz@awkint.com
+            </p>
+            <p>
+              <i class="page-icons-address">
+                <!-- <img src="/static/images/地址.png" alt=""> -->
+              </i>
+              地址：上海市浦东新区博霞路22号408室
+            </p>
           </div>
-          <div class="white_line"></div>
-          <div class="explain_regular">
-            <p>电话：021-67991207</p>
-            <p>商务合作：biz@deepeye.cc</p>
-            <p>媒体合作：biz@deepeye.cc</p>
-            <p>招贤纳士：biz@deepeye.cc</p>
-            <p>地址：上海市浦东新区</p>
-          </div>
-
         </div>
       </section>
       <!-- contact 部分 end -->
@@ -335,17 +461,17 @@
           <div class="copyright">
 
             <div>Copyright 2017 Awakening Inc.All rights reserved.</div>
-            <div>privacy</div>
           </div>
         </div>
       </footer>
+      <a href="#" class="scrollup"><img class="my__center" src="/static/images/arrow-top.png" alt=""></a>
 
     </div>
-    <script src="js/jquery-3.2.0.min.js" charset="utf-8"></script>
-    <script src="js/bootstrap.min.js" charset="utf-8"></script>
-    <script src="js/index.js" charset="utf-8"></script>
-    <script>
-      console.log('document.body.offsetHeight', document.body.offsetHeight);
-    </script>
+    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="/static/js/jquery.scrollTo.min.js" charset="utf-8"></script>
+    <script src="/static/js/jquery.localScroll.min.js" charset="utf-8"></script>
+    <script src="/static/js/unslider.js" charset="utf-8"></script>
+    <script src="/static/js/index.js" charset="utf-8"></script>
   </body>
 </html>

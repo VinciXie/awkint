@@ -19,7 +19,7 @@ var index = {
       // console.log('id', id);
         // var path = `index${id}.html`
         // var path = 'index.html'
-        var path = 'index1.html'
+        var path = 'index.html'
         sendHtml(path, response)
     }
 }
