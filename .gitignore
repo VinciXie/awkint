@@ -1,5 +1,4 @@
 /node_modules
-images/
 *.zip
 /UI*
 .sass-cache/

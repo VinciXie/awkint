@@ -159,12 +159,18 @@ body {
   height: calc(40vh + 400px);
   color: $black;
   .h1 {
-    margin: 16vh 0 7rem;
+    margin: 16vh 0 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-indent: -9999px;
     overflow: hidden;
+    @media screen and (max-width: 414px) {
+      margin: 10vh 0 3rem;
+    }
+    @media screen and (max-width: 340px) {
+      margin: 8vh 0 5rem;
+    }
     svg {
       width: 326px;
       transform: translateX(-26px);
@@ -175,9 +181,6 @@ body {
         width: 162px;
         transform:  translateX(-26px);
       }
-    }
-    @media screen and (max-width: 320px) {
-      margin: 8vh 0 3rem;
     }
   }
   .explain_regular {
@@ -296,9 +299,106 @@ body {
       line-height: 1.4;
     }
   }
-  .serial-title2 {
-    padding: 0 5%;
+  @media screen and (max-width: 760px) {
+    .serial-title2 p span {
+      display: block;
+    }
   }
+
+  // .works {
+  //   display: -webkit-flex;
+  //   display: flex;
+  //   // flex-direction: column;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   // align-items: flex-end;
+  //   align-content: flex-start;
+  //   margin: 0 auto;
+  //   max-width: 646px;
+  //   height: 125px;
+  //   @media screen and (max-width: 760px) {
+  //     height: 100px;
+  //   }
+  //   @media screen and (max-width: 600px) {
+  //     height: 75px;
+  //   }
+  //   @media screen and (max-width: 380px) {
+  //     height: 66px;
+  //   }
+  //   .box:first-child {
+  //     border-top-left-radius: $radius;
+  //     border-bottom-left-radius: $radius;
+  //     border-left: 1px solid $border-gray;
+  //   }
+  //   .box:last-child {
+  //     border-top-right-radius: $radius;
+  //     border-bottom-right-radius: $radius;
+  //   }
+  //   .box {
+  //     position: relative;
+  //     height: 100%;
+  //     border-top: 1px solid $border-gray;
+  //     border-right: 1px solid $border-gray;
+  //     border-bottom: 1px solid $black;
+  //     border-left: 1px solid transparent;
+  //     background-color: $white;
+  //     // background-color: transparent;
+  //     cursor: pointer;
+  //
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //
+  //     .img {
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       transform: translateY(-3px);
+  //       svg {
+  //         width: 64px;
+  //         @media screen and (max-width: 760px) {
+  //           transform: translateY(-5%) scale(0.6);
+  //         }
+  //         @media screen and (max-width: 380px) {
+  //           transform: translateY(-5%) scale(0.5);
+  //         }
+  //       }
+  //     }
+  //   }
+  //
+  //   // @include box-image(1);
+  //   // @include box-image(2);
+  //   // @include box-image(3);
+  //   // @include box-image(4);
+  //   // @include box-image(5);
+  //
+  //   .box.active {
+  //     transition: all 0.5s;
+  //     border-top: 1px solid $black;
+  //     border-right: 1px solid $black;
+  //     border-left: 1px solid $black;
+  //     border-bottom: none;
+  //     border-top-left-radius: $radius;
+  //     border-top-right-radius: $radius;
+  //   }
+  //   .box > .arrow{
+  //     display: block;
+  //     position: absolute;
+  //     left: 50%;
+  //     bottom: 10%;
+  //     width: 12px;
+  //     height: 12px;
+  //     transform: translateX(-50%);
+  //     @media screen and (max-width: 760px) {
+  //       width: 8px;
+  //       height: 8px;
+  //     }
+  //     transition: all 0.5s;
+  //   }
+  //   .box.active > .arrow{
+  //     transform: translateX(-50%) rotate(180deg)
+  //   }
+  // }
 
   .works {
     display: -webkit-flex;
@@ -311,6 +411,7 @@ body {
     margin: 0 auto;
     max-width: 646px;
     height: 125px;
+    border-bottom: 1px solid $black;
     @media screen and (max-width: 760px) {
       height: 100px;
     }
@@ -322,22 +423,19 @@ body {
     }
     .box:first-child {
       border-top-left-radius: $radius;
-      border-bottom-left-radius: $radius;
       border-left: 1px solid $border-gray;
     }
     .box:last-child {
       border-top-right-radius: $radius;
-      border-bottom-right-radius: $radius;
+      border-right: 1px solid $border-gray;
     }
     .box {
       position: relative;
       height: 100%;
       border-top: 1px solid $border-gray;
-      border-right: 1px solid $border-gray;
-      border-bottom: 1px solid $black;
-      border-left: 1px solid transparent;
+      border-left: 1px solid $border-gray;
+      border-right: 1px solid transparent;
       background-color: $white;
-      // background-color: transparent;
       cursor: pointer;
 
       display: flex;
@@ -359,22 +457,19 @@ body {
           }
         }
       }
+
     }
 
-    // @include box-image(1);
-    // @include box-image(2);
-    // @include box-image(3);
-    // @include box-image(4);
-    // @include box-image(5);
-
     .box.active {
-      transition: all 0.5s;
+      height: calc(100% + 1px);
+      // transition: all 0.5s;
       border-top: 1px solid $black;
       border-right: 1px solid $black;
       border-left: 1px solid $black;
-      border-bottom: none;
+      // border-bottom: 1px solid $white;
       border-top-left-radius: $radius;
       border-top-right-radius: $radius;
+      z-index: 100;
     }
     .box > .arrow{
       display: block;
@@ -655,9 +750,35 @@ body {
         top: 50%;
         height: 12px;
         transform: translate(-70px,-50%);
-        // img {
-        //   transform: scale(0.5);
-        // }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      p {
+        margin-left: 30%;
+      }
+    }
+    @media screen and (max-width: 380px) {
+      p {
+        margin-left: 25%;
+        i {
+          position: absolute;
+          top: 50%;
+          height: 12px;
+          transform: translate(-60px,-50%);
+        }
+      }
+    }
+    @media screen and (max-width: 320px) {
+      p:last-child {
+          text-indent: -4rem;
+          transform: translateX(4rem);
+          max-width: 140px;
+        i {
+          position: absolute;
+          top: 25%;
+          height: 12px;
+          transform: translate(-60px,-50%);
+        }
       }
     }
   }
@@ -672,7 +793,6 @@ body {
   border-radius: 50%;
   background-color: $black;
   img {
-  // i.icon-angle-up {
     width: 18px;
   }
 }
