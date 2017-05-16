@@ -1051,7 +1051,7 @@ body {
       /* line 756, ../sass/index.scss */
       #contact .contact-information p {
         margin-left: 30%; } }
-    @media screen and (max-width: 380px) {
+    @media screen and (max-width: 420px) {
       /* line 761, ../sass/index.scss */
       #contact .contact-information p {
         margin-left: 25%; }
@@ -1061,7 +1061,7 @@ body {
           top: 50%;
           height: 12px;
           transform: translate(-60px, -50%); } }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 380px) {
       /* line 772, ../sass/index.scss */
       #contact .contact-information p:last-child {
         text-indent: -4rem;

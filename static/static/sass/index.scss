@@ -757,7 +757,7 @@ body {
         margin-left: 30%;
       }
     }
-    @media screen and (max-width: 380px) {
+    @media screen and (max-width: 420px) {
       p {
         margin-left: 25%;
         i {
@@ -768,7 +768,7 @@ body {
         }
       }
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 380px) {
       p:last-child {
           text-indent: -4rem;
           transform: translateX(4rem);
