@@ -1,5 +1,9 @@
 $(function(){
 
+
+
+
+
   $(".box").click(function(){
     // 下拉菜单的效果
     var $this = $(this),
@@ -78,20 +82,26 @@ $(function(){
 
   // set navbar size when loading
   if($(window).width() < 760) {
-      $("#bs-example-navbar-collapse-1").css("height", $(window).height() - 55)
+      // $("#bs-example-navbar-collapse-1").css("height", $(window).height() - 55)
+      $("#bs-example-navbar-collapse-1").css("height", $(window).height())
   }
   $(".navbar-toggle").click(function() {
-      var index = $(this).index()
+      var index = this.dataset.index
+      console.log('index', index);
       if(index == 0) {
+          // $("#bs-example-navbar-collapse-1").show()
           $("#bs-example-navbar-collapse-1").slideDown()
-          $(this).hide()
-          $(this).next().show()
-      } else if(index == 1) {
+          // $(this).hide()
+          // $(this).parent().hide()
+      } else if(index == 2) {
+          // $("#bs-example-navbar-collapse-1").hide()
           $("#bs-example-navbar-collapse-1").slideUp()
-          $(this).hide()
-          $(this).prev().show()
+            // $(this).parent().prev().show()
+          // $(".navbar-toggle").eq(0).show()
       }
   })
-
+  $(".navbar-nav li").click(function() {
+    $(this).parents("#bs-example-navbar-collapse-1").slideUp()
+  })
 
 });
