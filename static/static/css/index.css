@@ -140,7 +140,7 @@ input {
   background-size: 200px 200px; }
 
 /*水平 垂直居中*/
-.my__center, .my_center::before {
+.my__center, .scrollup svg, .my_center::before {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -169,11 +169,11 @@ html {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  font-family: "gothamregular", Helvetica, "Noto SansCJK", "PingFang SC", "Arial", "Microsoft YaHei", "宋体", "黑体", sans-serif;
+  font-family: "PingFang SC", "gothamregular", Helvetica, "Noto SansCJK", "Arial", "Microsoft YaHei", "宋体", "黑体", sans-serif;
   font-size: 12px; }
 
 body {
-  font-family: "gothamregular", Helvetica, "Noto SansCJK", "PingFang SC", "Arial", "Microsoft YaHei", "宋体", "黑体", sans-serif;
+  font-family: "PingFang SC", "gothamregular", Helvetica, "Noto SansCJK", "Arial", "Microsoft YaHei", "宋体", "黑体", sans-serif;
   position: relative;
   width: 100%;
   overflow-x: hidden;
@@ -439,14 +439,12 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     margin: auto;
-    padding-top: 40%;
+    padding-top: 30%;
     height: 100%; }
     #bs-example-navbar-collapse-1 .nav li {
       width: 100%;
-      height: 15%;
+      height: 13%;
       margin: 5% 0 2%; }
-    #bs-example-navbar-collapse-1 .nav li:last-child {
-      display: none; }
 
   .navbar-header svg {
     display: block;
@@ -759,7 +757,7 @@ body {
     padding: 0 8%;
     height: 72px;
     line-height: 72px;
-    border: 0.5px solid #999b98;
+    border: 1px solid #383c3c;
     border-radius: 2px;
     font-size: 1.5rem;
     font-weight: normal;
@@ -883,13 +881,13 @@ body {
           transform: translate(-60px, -50%); } }
     @media screen and (max-width: 380px) {
       #contact .contact-information p:last-child {
-        text-indent: -4rem;
-        transform: translateX(4rem);
+        text-indent: -3rem;
+        transform: translateX(3rem);
         max-width: 146px; }
         #contact .contact-information p:last-child i {
           position: absolute;
           top: 25%;
-          transform: translate(-12px, -50%); } }
+          transform: translate(-36px, -50%); } }
 
 .scrollup {
   position: fixed;
@@ -899,7 +897,7 @@ body {
   right: 10px;
   border-radius: 50%;
   background-color: #383c3c; }
-  .scrollup img {
+  .scrollup svg {
     width: 18px; }
 
 /*# sourceMappingURL=index.css.map */

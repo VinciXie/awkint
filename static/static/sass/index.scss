@@ -4,7 +4,6 @@
 @import "./common.scss";
 @import "background";
 @import "mixin";
-// @import "icons";
 
 body {
   overflow: hidden;
@@ -137,15 +136,12 @@ body {
         justify-content: flex-start;
         // align-items: stretch;
         margin: auto;
-        padding-top: 40%;
+        padding-top: 30%;
         height: 100%;
         li {
           width: 100%;
-          height: 15%;
+          height: 13%;
           margin: 5% 0 2%;
-        }
-        li:last-child {
-          display: none;
         }
     }
     .navbar-header svg {
@@ -540,7 +536,7 @@ body {
       height: 7vh;
       line-height: 7vh;
     }
-    border: 0.5px solid $gray;
+    border: 1px solid $black;
     // border-top-left-radius: $radius;
     // border-top-right-radius: $radius;
     border-radius: $radius;
@@ -696,13 +692,13 @@ body {
     }
     @media screen and (max-width: 380px) {
       p:last-child {
-          text-indent: -4rem;
-          transform: translateX(4rem);
+          text-indent: -3rem;
+          transform: translateX(3rem);
           max-width: 146px;
         i {
           position: absolute;
           top: 25%;
-          transform: translate(-12px,-50%);
+          transform: translate(-36px,-50%);
         }
       }
     }
@@ -717,7 +713,8 @@ body {
   right: 10px;
   border-radius: 50%;
   background-color: $black;
-  img {
+  svg {
+    @extend .my__center;
     width: 18px;
   }
 }
