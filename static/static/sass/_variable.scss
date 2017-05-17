@@ -6,7 +6,16 @@
     url('../fonts/Noto-SansCJK-webfont.woff') format('woff'), /* chrome、firefox */
     url('../fonts/Noto-SansCJK-webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     url('../fonts/Noto-SansCJK-webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+    font-weight: normal;
 }
+// @font-face {font-family: 'Noto SansCJK';
+//     src: url('../fonts/Noto-SansCJK-light-webfont.eot'); /* IE9*/
+//     src: url('../fonts/Noto-SansCJK-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//     url('../fonts/Noto-SansCJK-light-webfont.woff') format('woff'), /* chrome、firefox */
+//     url('../fonts/Noto-SansCJK-light-webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+//     url('../fonts/Noto-SansCJK-light-webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+//     font-weight: lighter;
+// }
 // 字体
 $font: 'gothamregular',Helvetica,"Noto SansCJK",'PingFang SC',"Arial","Microsoft YaHei","宋体","黑体",sans-serif;
 //  颜色
