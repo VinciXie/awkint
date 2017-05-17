@@ -8,13 +8,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'san_francisco_displaysemibold';
-    src: url('../fonts/sanfranciscodisplay-semibold-webfont.woff2') format('woff2'),
-         url('../fonts/sanfranciscodisplay-semibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* 禁用iPhone中Safari的字号自动调整 */
 html {
@@ -55,11 +48,6 @@ body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, d
 	margin: 0;
 	padding: 0;
 }
-body {
-	font-family: $cnfont;
-	color: #555;
-	background-color: #ffffff;
-}
 em, i {
 	font-style: normal;
 }
@@ -87,9 +75,6 @@ strong {
 a {
 	text-decoration: none;
 	color: #969696;
-}
-p{
-	/*font-family: 'san_francisco_displaysemibold';*/
 }
 a:hover {
   color: none;
@@ -177,13 +162,6 @@ input{
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-}
-
-/*最大宽高*/
-html,body{
-    /*max-width: 720px;*/
-    /*min-width: 640px;*/
-    /*margin: 0 auto;*/
 }
 
 /*过渡*/

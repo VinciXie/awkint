@@ -1,12 +1,18 @@
 @charset "UTF-8";
+
+@font-face {font-family: 'Noto SansCJK';
+    src: url('../fonts/Noto-SansCJK-webfont.eot'); /* IE9*/
+    src: url('../fonts/Noto-SansCJK-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Noto-SansCJK-webfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/Noto-SansCJK-webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/Noto-SansCJK-webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
 // 字体
-$cnfont: 'PingFang SC',"Arial","Microsoft YaHei","宋体","黑体",sans-serif;
-// $cnfont: 'PingFang SC',"Arial","宋体","Microsoft YaHei","黑体",sans-serif;
-$enfont: 'gothamregular',"Arial",Helvetica;
+$font: 'gothamregular',Helvetica,"Noto SansCJK",'PingFang SC',"Arial","Microsoft YaHei","宋体","黑体",sans-serif;
 //  颜色
-$blue-0: #43089D;
-$blue-1: #4608ad;
-$blue-2: #4d2dc3;
+// $blue-0: #43089D;
+// $blue-1: #4608ad;
+// $blue-2: #4d2dc3;
 $black: #383c3c;
 $white: #fbfaf5;
 $bgc: #363636;

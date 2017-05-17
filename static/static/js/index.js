@@ -1,9 +1,6 @@
 $(function(){
 
 
-
-
-
   $(".box").click(function(){
     // 下拉菜单的效果
     var $this = $(this),
@@ -12,7 +9,6 @@ $(function(){
         index = data.dataset.boxnumber
     // 点击的时候判断
     var clearActive = function() {
-      console.log('clearActive');
 
       if ($parent.find(".tabContent")) {
         // 团队成员部分的下拉菜单
@@ -28,7 +24,10 @@ $(function(){
       }
     }
     if($this.hasClass("active")) {
-      // clearActive()
+      // console.log('clearActive');
+      if (!this.closest("#product")) {
+        clearActive()
+      }
     } else {
       clearActive()
       // 当前是取消选中状态
@@ -87,7 +86,7 @@ $(function(){
   }
   $(".navbar-toggle").click(function() {
       var index = this.dataset.index
-      console.log('index', index);
+      // console.log('index', index);
       if(index == 0) {
           // $("#bs-example-navbar-collapse-1").show()
           $("#bs-example-navbar-collapse-1").slideDown()
@@ -103,5 +102,23 @@ $(function(){
   $(".navbar-nav li").click(function() {
     $(this).parents("#bs-example-navbar-collapse-1").slideUp()
   })
+
+  var chineseAll = $('*').text()
+  // 去掉字符串里数字和空格和字母和符号的函数
+  var number = '0123456789 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ<>;@#{}_《》:-.()/%'
+  function deleteNumberFromS(s) {
+    let s1 = ''
+    for (var i = 0; i < s.length; i++) {
+      if (!number.includes(s[i])) {
+        s1 += s[i]
+      }
+    }
+    return s1
+  }
+
+  var a1 = deleteNumberFromS(chineseAll)
+  var arr1 = Array.from(new Set(a1))
+  var s2 = arr1.join('')
+  // console.log('s2', s2);
 
 });
