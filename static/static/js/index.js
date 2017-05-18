@@ -1,10 +1,4 @@
 
-
-// import "./jquery.scrollTo.min.js";
-// import "./jquery.localScroll.min.js";
-// import "./unslider-min.js";
-//
-
 $(function(){
 
   $(".box").click(function(){
@@ -12,40 +6,44 @@ $(function(){
     var $this = $(this),
         $parent = $this.parent()
         data = $this[0];
-        index = data.dataset.boxnumber
+        index = data.dataset.boxnumber;
+    var $tabC = $parent.next(".tabC")
     // 点击的时候判断
     var clearActive = function() {
-
-      if ($parent.find(".tabContent")) {
-        // 团队成员部分的下拉菜单
-        $parent.children('.active').removeClass("active")
-        $parent.find(".tabContent").slideUp()
-
-      }
-      if ($parent.next(".tabC")) {
-        // 主要产品部分的下拉菜单
-        var $tabC = $parent.next(".tabC")
-
+      // console.log('$parent.next(".tabC").length', $parent.next(".tabC").length);
+      $parent.children('.active').removeClass("active")
+      if ($parent.next(".tabC").length > 0) {
+        // 主要产品部分
+        // 的下拉菜单
         $tabC.find(".tabContent").slideUp()
+      } else {
+        // 团队成员部分的下拉菜单
+        // console.log('clearActive2');
+        $this.next(".tabContent").slideUp()
       }
     }
-    if($this.hasClass("active")) {
+
+    if($this.hasClass("active") || $parent.hasClass("active")) {
       // console.log('clearActive');
       if (!this.closest("#product")) {
+        // console.log('clearActive members');
         clearActive()
       }
     } else {
       clearActive()
+      // console.log('addActive');
       // 当前是取消选中状态
       // 激活操作
       $this.addClass("active")
       // 对应的下拉框 展现
-      if ($parent.find(".tabContent")) {
-        $parent.children(".tabContent").eq(index).slideDown()
-      }
-      if ($parent.next(".tabC")) {
-        var $tabC = $parent.next(".tabC")
-
+      // console.log('$this', $this);
+      // console.log('$this.find(".tabContent")', $this.find(".tabContent"));
+      if ($this.next(".tabContent").length) {
+        // 团队成员部分的下拉菜单
+        // console.log('tabContent');
+        $this.next(".tabContent").slideDown()
+      } else {
+        // console.log('$tabC', $tabC);
         $tabC.find(".tabContent").eq(index).slideDown()
       }
     }

@@ -21,7 +21,15 @@ body{
 }
 
 .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 768px;
+}
+
+.collapse {
+    display: none;
 }
 
 // @media screen and (max-width: 440px) {

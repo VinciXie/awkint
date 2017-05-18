@@ -185,7 +185,14 @@ body {
   font-weight: bold; }
 
 .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 768px; }
+
+.collapse {
+  display: none; }
 
 .w1 {
   text-align: center; }
@@ -480,10 +487,13 @@ body {
         #company .h1 svg {
           width: 162px;
           transform: translateX(-26px); } }
-  #company .explain_regular p {
-    margin: auto;
-    font-size: 1.42rem;
-    line-height: 1.9; }
+  #company .explain_regular {
+    font-weight: 600; }
+    #company .explain_regular p {
+      margin: auto;
+      font-size: 1.42rem;
+      line-height: 1.9;
+      font-weight: 600; }
   #company .icon_explain, #company .flex_icon {
     display: -webkit-flex;
     display: flex;
@@ -703,83 +713,37 @@ body {
   width: 88%;
   min-width: 280px;
   margin: auto; }
-  .members > .tabContent {
-    display: none;
-    width: 100%;
-    border-left: 1px solid #383c3c;
-    border-right: 1px solid #383c3c;
-    border-bottom: 1px solid #383c3c;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px; }
-    .members > .tabContent .member-l {
-      display: flex;
-      align-items: flex-end;
-      margin-bottom: 80px;
-      padding: 0 8%;
-      text-align: left; }
-      .members > .tabContent .member-l .h3 {
-        display: inline-block;
-        margin: 7% 0;
-        font-weight: 600; }
-      .members > .tabContent .member-l .explain {
-        padding-top: 10px;
-        padding-bottom: 7%;
-        font-size: 1.5rem;
-        font-weight: 600; }
-      .members > .tabContent .member-l .wl {
-        margin: 7% 20px;
-        height: 34px;
-        width: 3px;
-        background-color: #383c3c; }
-        @media screen and (max-width: 760px) {
-          .members > .tabContent .member-l .wl {
-            height: 24px; } }
-    .members > .tabContent:nth-of-type(7) .member-l > p:first-child {
-      margin-top: 116px; }
-    .members > .tabContent .member-r {
-      display: -webkit-flex;
-      display: flex;
-      padding: 0 8% 15%;
-      flex-direction: column;
-      justify-content: space-around;
-      text-align: left; }
-      .members > .tabContent .member-r > .explain_regular {
-        margin-bottom: 8px;
-        padding-left: 30px; }
-        .members > .tabContent .member-r > .explain_regular > li {
-          padding-left: 7px;
-          font-size: 1.17rem;
-          list-style-type: square;
-          line-height: 1.8; }
-  .members > .box {
+  .members .member-info {
     position: relative;
     margin: 12px 0 0;
-    padding: 0 8%;
-    height: 72px;
-    line-height: 72px;
     border: 1px solid #383c3c;
-    border-radius: 2px;
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: #383c3c;
-    text-align: left;
-    cursor: pointer;
-    transition: all 0.5s; }
-    @media screen and (max-width: 768px) {
-      .members > .box {
-        margin: 10px 0 0;
-        height: 7vh;
-        line-height: 7vh; } }
-    .members > .box span {
+    border-radius: 2px; }
+    .members .member-info .box {
+      position: relative;
+      padding: 0 8%;
+      height: 72px;
+      line-height: 72px;
+      font-size: 1.5rem;
+      font-weight: normal;
+      color: #383c3c;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.5s; }
+      @media screen and (max-width: 768px) {
+        .members .member-info .box {
+          margin: 10px 0 0;
+          height: 7vh;
+          line-height: 7vh; } }
+    .members .member-info span {
       font-weight: 600; }
-    .members > .box span:nth-child(2) {
+    .members .member-info span:nth-child(2) {
       margin-left: 5px;
       margin-right: 13px; }
-    .members > .box .square_dot {
+    .members .member-info .square_dot {
       width: 4px;
       height: 4px;
       background-color: #383c3c; }
-    .members > .box .plus {
+    .members .member-info .plus {
       position: absolute;
       top: 50%;
       right: 8%;
@@ -787,29 +751,65 @@ body {
       height: 20px;
       transform: translate(-50%, -50%); }
       @media screen and (max-width: 767px) {
-        .members > .box .plus {
+        .members .member-info .plus {
           width: 14px;
           height: 14px; } }
-      .members > .box .plus svg {
+      .members .member-info .plus svg {
         position: absolute; }
-    .members > .box .gray-line {
+    .members .member-info .gray-line {
       display: none;
       position: absolute;
       top: 0;
       height: calc(100% + 1px);
       width: 83%;
       border-bottom: 1px solid #999b98; }
-  .members > .box.active {
-    border-top: 1px solid #383c3c;
-    border-left: 1px solid #383c3c;
-    border-right: 1px solid #383c3c;
-    border-bottom: none;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0; }
-    .members > .box.active .plus svg path:last-child {
-      display: none; }
-    .members > .box.active .gray-line {
-      display: block; }
+  .members .tabContent {
+    display: none;
+    width: 100%; }
+    .members .tabContent .member-l {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 80px;
+      padding: 0 8%;
+      text-align: left; }
+      .members .tabContent .member-l .h3 {
+        display: inline-block;
+        margin: 7% 0;
+        font-weight: 600; }
+      .members .tabContent .member-l .explain {
+        padding-top: 10px;
+        padding-bottom: 7%;
+        font-size: 1.5rem;
+        font-weight: 600; }
+      .members .tabContent .member-l .wl {
+        margin: 7% 20px;
+        height: 34px;
+        width: 3px;
+        background-color: #383c3c; }
+        @media screen and (max-width: 760px) {
+          .members .tabContent .member-l .wl {
+            height: 24px; } }
+    .members .tabContent:nth-of-type(7) .member-l > p:first-child {
+      margin-top: 116px; }
+    .members .tabContent .member-r {
+      display: -webkit-flex;
+      display: flex;
+      padding: 0 8% 15%;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: left; }
+      .members .tabContent .member-r > .explain_regular {
+        margin-bottom: 8px;
+        padding-left: 30px; }
+        .members .tabContent .member-r > .explain_regular > li {
+          padding-left: 7px;
+          font-size: 1.17rem;
+          list-style-type: square;
+          line-height: 1.8; }
+  .members .active .plus svg path:last-child {
+    display: none; }
+  .members .active .gray-line {
+    display: block; }
 
 @media screen and (max-width: 760px) {
   html {
