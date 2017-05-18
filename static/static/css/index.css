@@ -368,10 +368,10 @@ body {
       padding: 0 0 5px 0;
       margin: 15px 0;
       color: #383c3c;
-      border-bottom: 1px solid #fbfaf5; }
+      border-bottom: 2px solid #fbfaf5; }
       @media screen and (min-width: 768px) {
         .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
-          border-bottom: 1px solid #383c3c; } }
+          border-bottom: 2px solid #383c3c; } }
 
 @media screen and (max-width: 767px) {
   .navbar-default .navbar-nav > li {

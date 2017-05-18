@@ -1,5 +1,11 @@
-$(function(){
 
+
+// import "./jquery.scrollTo.min.js";
+// import "./jquery.localScroll.min.js";
+// import "./unslider-min.js";
+//
+
+$(function(){
 
   $(".box").click(function(){
     // 下拉菜单的效果

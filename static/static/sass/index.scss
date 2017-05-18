@@ -37,10 +37,10 @@ body {
       padding: 0 0 5px 0;
       margin: 15px 0;
       color: $black;
-      border-bottom: 1px solid $white;
+      border-bottom: 2px solid $white;
       @media screen and (min-width: 768px) {
         &:hover, &:focus {
-          border-bottom: 1px solid $black;
+          border-bottom: 2px solid $black;
         }
       }
     }

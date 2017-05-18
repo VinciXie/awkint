@@ -3,7 +3,21 @@
   "version": "1.0.0",
   "main": "app.js",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack --progress --display-modules --display-reasons --color"
+  },
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.3",
+    "jquery": "^3.2.1",
+    "jsdom": "^10.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }
