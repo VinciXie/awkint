@@ -1,17 +1,32 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const devConfig = {
-  devtool: 'source-map',
   context: path.resolve(__dirname, './static/static/js'),
   entry: './main.js',
+  externals: {
+    // require("jquery") is external and available
+    //  on the global var jQuery
+    "jquery": "jQuery"
+  },
 
   output: {
-    path: path.resolve(__dirname, './static/dist'),
-    filename: '[name].[chunkhash:8].js',
-    sourceMapFilename: '[name].[chunkhash:8].map',
-    chunkFilename: '[id].[chunkhash:8].js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, './static/static/dist'),
+  },
+  devtool: 'source-map',
+
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [{
+          loader: 'babel-loader',
+          options: { presets: ['es2015'] }
+        }],
+      },
+    ],
   },
 
   plugins: [

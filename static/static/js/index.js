@@ -4,8 +4,8 @@ $(function(){
   $(".box").click(function(){
     // 下拉菜单的效果
     var $this = $(this),
-        $parent = $this.parent()
-        data = $this[0];
+        $parent = $this.parent(),
+        data = $this[0],
         index = data.dataset.boxnumber;
     var $tabC = $parent.next(".tabC")
     // 点击的时候判断

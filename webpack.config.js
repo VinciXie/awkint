@@ -9,6 +9,12 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, './static/static/dist'),
   },
+  // output: {
+  //   filename: '[name].[chunkhash:8].js',
+  //   sourceMapFilename: '[name].[chunkhash:8].map',
+  //   path: path.resolve(__dirname, './static/static/dist'),
+  // },
+  devtool: 'eval-source-map',
   externals: {
     // require("jquery") is external and available
     //  on the global var jQuery
@@ -51,6 +57,12 @@ module.exports = {
       filename: '[name].bundle.css',
       allChunks: true,
     }),
+    new webpack.HotModuleReplacementPlugin()
   ],
-  devtool: 'eval-source-map',
+  devServer: {
+    contentBase: path.join(__dirname, "static"),
+    compress: true,
+    hot: true,
+    port: 8080
+  }
 };

@@ -1,4 +1,7 @@
 @charset "UTF-8";
+
+@import "./bootstrap0.min.scss";
+@import "./unslider.scss";
 @import "./base.scss";
 
 @import "./common.scss";
@@ -466,16 +469,18 @@ body {
   margin: auto;
   .member-info {
     position: relative;
-    margin: 12px 0 0;
+    margin: 24px 0 0;
     border: 1px solid $black;
     border-radius: $radius;
+    @media screen and (max-width: 768px) {
+      margin: 10px 0 0;
+    }
     .box {
       position: relative;
       padding: 0 8%;
       height: 72px;
       line-height: 72px;
       @media screen and (max-width: 768px) {
-        margin: 10px 0 0;
         height: 7vh;
         line-height: 7vh;
       }
@@ -591,6 +596,7 @@ body {
     }
     .gray-line {
       display: block;
+      z-index: -1;
     }
   }
 }
