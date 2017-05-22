@@ -68,11 +68,19 @@ body{
 .explain {
   font-size: 1.5rem;
   font-weight: 500;
+  @media screen and (max-width: 767px) {
+    font-size: 1.75rem;
+  }
+
 }
 .explain_regular, .explain_regular > p, .title {
   font-size: 1.5rem;
   font-weight: normal;
   line-height: 1.4;
+  @media screen and (max-width: 767px) {
+    font-size: 1.75rem;
+  }
+
 }
 
 .white_line {

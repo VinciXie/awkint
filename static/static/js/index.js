@@ -93,18 +93,23 @@ $(function(){
       // console.log('index', index);
       if(index == 0) {
           // $("#bs-example-navbar-collapse-1").show()
-          $("#bs-example-navbar-collapse-1").slideDown()
+          $("#bs-example-navbar-collapse-1").slideDown(function() {
+            console.log('this', this);
+            $(this).find("a").fadeIn()
+          })
           // $(this).hide()
           // $(this).parent().hide()
       } else if(index == 2) {
           // $("#bs-example-navbar-collapse-1").hide()
-          $("#bs-example-navbar-collapse-1").slideUp()
+          $("#bs-example-navbar-collapse-1").slideUp("normal", function() {
+            $(this).find("a").fadeOut()
+          })
             // $(this).parent().prev().show()
           // $(".navbar-toggle").eq(0).show()
       }
   })
   $(".navbar-nav li").click(function() {
-    $(this).parents("#bs-example-navbar-collapse-1").slideUp()
+    $(this).parents("#bs-example-navbar-collapse-1").slideUp().find("a").fadeOut()
   })
 
   var chineseAll = $('*').text()
