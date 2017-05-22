@@ -14,7 +14,7 @@ module.exports = {
   //   sourceMapFilename: '[name].[chunkhash:8].map',
   //   path: path.resolve(__dirname, './static/static/dist'),
   // },
-  devtool: 'eval-source-map',
+  // devtool: 'eval-source-map',
   externals: {
     // require("jquery") is external and available
     //  on the global var jQuery
@@ -53,11 +53,11 @@ module.exports = {
         NODE_ENV: "'development'"
       }
     }),
-    new ExtractTextPlugin({
-      filename: '[name].bundle.css',
-      allChunks: true,
-    }),
-    new webpack.HotModuleReplacementPlugin()
+    // new ExtractTextPlugin({
+    //   filename: '[name].bundle.css',
+    //   allChunks: true,
+    // }),
+    // new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
     contentBase: path.join(__dirname, "static"),

@@ -101,8 +101,12 @@ $(function(){
           // $(this).parent().hide()
       } else if(index == 2) {
           // $("#bs-example-navbar-collapse-1").hide()
-          $("#bs-example-navbar-collapse-1").slideUp("normal", function() {
-            $(this).find("a").fadeOut()
+          // $("#bs-example-navbar-collapse-1").slideUp("normal", function() {
+          //   $(this).find("a").fadeOut()
+          // })
+          $("#bs-example-navbar-collapse-1").find("a").fadeOut(function() {
+            // console.log('this', this);
+            $("#bs-example-navbar-collapse-1").slideUp()
           })
             // $(this).parent().prev().show()
           // $(".navbar-toggle").eq(0).show()
@@ -125,7 +129,9 @@ $(function(){
     return s1
   }
 
-  var a1 = deleteNumberFromS(chineseAll)
+  var firstfont = $('.navbar-nav, #company').text()
+
+  var a1 = deleteNumberFromS(firstfont)
   var arr1 = Array.from(new Set(a1))
   var s2 = arr1.join('')
   // console.log('s2', s2);
