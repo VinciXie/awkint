@@ -3303,7 +3303,10 @@ footer {
   z-index: -3; }
   @media screen and (max-width: 760px) {
     .w1 .background4 {
-      transform: rotate(14deg) translate(-84%, 15%) skewX(-71deg) skewY(-8deg); } }
+      transform: rotate(14deg) translate(-101%, 27%) skewX(-71deg) skewY(-8deg); } }
+  @media screen and (max-width: 380px) {
+    .w1 .background4 {
+      transform: rotate(14deg) translate(-98%, 24%) skewX(-71deg) skewY(-8deg); } }
   @media screen and (max-width: 320px) {
     .w1 .background4 {
       transform: rotate(14deg) translate(-102%, 21%) skewX(-71deg) skewY(-8deg); } }
@@ -3373,7 +3376,7 @@ body {
     .navbar-default .navbar-nav li a {
       padding: 0 0 5px 0;
       margin: 15px 0;
-      font-weight: 500;
+      font-weight: 600;
       font-family: 'SourceHan-S-SCad4a5515419017';
       color: #383c3c;
       border-bottom: 2px solid #fbfaf5; }
@@ -3402,10 +3405,10 @@ body {
   border: none;
   background: none; }
   .navbar-default .navbar-toggle .icon-bar {
-    width: 20px;
+    width: 22px;
     background-color: #383c3c; }
   .navbar-default .navbar-toggle .icon-bar + .icon-bar {
-    margin-top: 4px; }
+    margin-top: 5px; }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background: none; }
@@ -3504,7 +3507,15 @@ body {
       font-family: 'SourceHan-S-SCad4a5515419017'; }
       @media screen and (max-width: 767px) {
         #company .explain_regular p {
-          font-size: 1.75rem; } }
+          font-size: 1.75rem;
+          font-weight: 500; } }
+    #company .explain_regular .xphh {
+      display: none; }
+    @media screen and (max-width: 414px) {
+      #company .explain_regular p:nth-child(3) {
+        display: none; }
+      #company .explain_regular .xphh {
+        display: block; } }
   #company .icon_explain, #company .flex_icon {
     display: -webkit-flex;
     display: flex;
@@ -3529,7 +3540,7 @@ body {
 
 #market .market-size {
   position: relative;
-  margin-top: 5.5rem;
+  margin-top: 12rem;
   padding: 3px 10%;
   text-align: left;
   color: #fbfaf5; }
@@ -3681,7 +3692,7 @@ body {
   #product .tabContent p {
     padding: 0 5%;
     width: 100%;
-    font-size: 1.1rem; }
+    font-size: 1.17rem; }
     @media screen and (max-width: 767px) {
       #product .tabContent p {
         font-size: 1.75rem; } }
@@ -3953,5 +3964,9 @@ body {
   background-color: #383c3c; }
   .scrollup svg {
     width: 18px; }
+
+.qrpy {
+  height: 100%;
+  overflow-y: hidden; }
 
 /*# sourceMappingURL=index.css.map */

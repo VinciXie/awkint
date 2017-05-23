@@ -51,7 +51,10 @@
     height: 250%;
     transform: rotate(13deg) translate(-108%, 64%) skewX(-71deg) skewY(-8deg);
     @media screen and (max-width: 760px) {
-      transform: rotate(14deg) translate(-84%,15%) skewX(-71deg) skewY(-8deg);
+      transform: rotate(14deg) translate(-101%,27%) skewX(-71deg) skewY(-8deg);
+    }
+    @media screen and (max-width: 380px) {
+      transform: rotate(14deg) translate(-98%,24%) skewX(-71deg) skewY(-8deg);
     }
     @media screen and (max-width: 320px) {
       transform: rotate(14deg) translate(-102%, 21%) skewX(-71deg) skewY(-8deg);

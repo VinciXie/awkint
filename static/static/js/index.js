@@ -96,6 +96,7 @@ $(function(){
           $("#bs-example-navbar-collapse-1").slideDown(function() {
             console.log('this', this);
             $(this).find("a").fadeIn()
+            $('body').addClass('qrpy')
           })
           // $(this).hide()
           // $(this).parent().hide()
@@ -106,14 +107,20 @@ $(function(){
           // })
           $("#bs-example-navbar-collapse-1").find("a").fadeOut(function() {
             // console.log('this', this);
-            $("#bs-example-navbar-collapse-1").slideUp()
+            $("#bs-example-navbar-collapse-1").slideUp(
+              function() {
+                $('body').removeClass('qrpy')
+              }
+            )
           })
             // $(this).parent().prev().show()
           // $(".navbar-toggle").eq(0).show()
       }
   })
   $(".navbar-nav li").click(function() {
-    $(this).parents("#bs-example-navbar-collapse-1").slideUp().find("a").fadeOut()
+    $(this).parents("#bs-example-navbar-collapse-1").slideUp().find("a").fadeOut(function() {
+      $('body').removeClass('qrpy')
+    })
   })
 
   var chineseAll = $('*').text()
