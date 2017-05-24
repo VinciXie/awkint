@@ -89,24 +89,27 @@ $(function(){
       $("#bs-example-navbar-collapse-1").css("height", $(window).height())
   }
   $(".navbar-toggle").click(function() {
-      var index = this.dataset.index
+    var _this = this
+      var index = $(this).hasClass('active')
+
       // console.log('index', index);
-      if(index == 0) {
+      if(index == false) {
+        $(_this).addClass('active')
           // $("#bs-example-navbar-collapse-1").show()
           $("#bs-example-navbar-collapse-1").slideDown(function() {
-            console.log('this', this);
+            // console.log('this', this);
             $(this).find("a").fadeIn()
             $('body').addClass('qrpy')
           })
           // $(this).hide()
           // $(this).parent().hide()
-      } else if(index == 2) {
-          // $("#bs-example-navbar-collapse-1").hide()
+      } else if(index == true) {
           // $("#bs-example-navbar-collapse-1").slideUp("normal", function() {
           //   $(this).find("a").fadeOut()
           // })
           $("#bs-example-navbar-collapse-1").find("a").fadeOut(function() {
             // console.log('this', this);
+            $(_this).removeClass('active')
             $("#bs-example-navbar-collapse-1").slideUp(
               function() {
                 $('body').removeClass('qrpy')
@@ -120,6 +123,7 @@ $(function(){
   $(".navbar-nav li").click(function() {
     $(this).parents("#bs-example-navbar-collapse-1").slideUp().find("a").fadeOut(function() {
       $('body').removeClass('qrpy')
+      $(".navbar-toggle").removeClass('active')
     })
   })
 

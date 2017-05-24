@@ -2499,9 +2499,6 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .navbar-default .navbar-toggle {
   border-color: #ddd; }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #ddd; }
-
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888; }
 
@@ -3401,17 +3398,42 @@ body {
     padding-bottom: 15px;
     border-top: none; } }
 .navbar-default .navbar-toggle {
-  margin-top: 7px;
+  position: fixed;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 15px;
   border: none;
-  background: none; }
+  border-radius: 50%;
+  z-index: 6;
+  background-color: #383c3c; }
   .navbar-default .navbar-toggle .icon-bar {
-    width: 22px;
-    background-color: #383c3c; }
-  .navbar-default .navbar-toggle .icon-bar + .icon-bar {
-    margin-top: 5px; }
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background: none; }
+    position: absolute;
+    top: 50%;
+    width: 18px;
+    background-color: #fbfaf5;
+    transition: all .5s; }
+  .navbar-default .navbar-toggle .icon-bar:nth-child(1) {
+    margin-top: -6px; }
+  .navbar-default .navbar-toggle .icon-bar:nth-child(2) {
+    margin-top: -1px; }
+  .navbar-default .navbar-toggle .icon-bar:nth-child(3) {
+    margin-top: 4px; }
+  .navbar-default .navbar-toggle.active .icon-bar:nth-child(1) {
+    position: absolute;
+    width: 20px;
+    margin-top: 0px;
+    transform: rotate(135deg); }
+  .navbar-default .navbar-toggle.active .icon-bar:nth-child(2) {
+    opacity: 0;
+    transform: rotate(90deg); }
+  .navbar-default .navbar-toggle.active .icon-bar:nth-child(3) {
+    position: absolute;
+    width: 20px;
+    margin-top: 0px;
+    transform: rotate(45deg); }
 
 @media screen and (max-width: 760px) {
   .navbar-header > button, .navbar-header a {
@@ -3426,16 +3448,16 @@ body {
     width: 100%;
     padding: 0;
     top: 0;
-    z-index: 100;
+    z-index: 5;
     font-family: 'SourceHan-S-SCad4a5515419017';
     background-color: #383c3c; }
     #bs-example-navbar-collapse-1 .navbar-toggle {
       position: absolute;
-      top: -8px;
-      right: -3px; }
+      top: 1px;
+      right: -5px; }
       #bs-example-navbar-collapse-1 .navbar-toggle svg {
-        width: 28px;
-        height: 28px; }
+        width: 24px;
+        height: 24px; }
 
   #bs-example-navbar-collapse-1 a {
     font-size: 18px;
@@ -3715,12 +3737,23 @@ body {
     text-align: left;
     list-style-type: square; }
     #product .explain_sm ul > li {
+      position: relative;
       font-size: 1.17rem;
       font-weight: normal;
       color: #383c3c; }
       @media screen and (max-width: 767px) {
         #product .explain_sm ul > li {
-          font-size: 1.75rem; } }
+          font-size: 1.75rem;
+          list-style-type: none; }
+          #product .explain_sm ul > li:before {
+            content: "";
+            position: absolute;
+            top: .6rem;
+            left: -1.12rem;
+            display: inline-block;
+            width: 3px;
+            height: 3px;
+            background-color: #000; } }
     #product .explain_sm ul li + li {
       margin-top: 45px; }
   #product .explain_sm .scrollbar::-webkit-scrollbar {
@@ -3764,12 +3797,10 @@ body {
       text-align: left;
       cursor: pointer;
       transition: all 0.5s; }
-      @media screen and (max-width: 768px) {
-        .members .member-info .box {
-          height: 7vh;
-          line-height: 7vh; } }
       @media screen and (max-width: 767px) {
         .members .member-info .box {
+          height: 8vh;
+          line-height: 8vh;
           font-size: 1.75rem; } }
     .members .member-info span {
       font-weight: 600; }
@@ -3806,9 +3837,13 @@ body {
     .members .tabContent .member-l {
       display: flex;
       align-items: flex-end;
-      margin-bottom: 80px;
+      margin-bottom: 76px;
       padding: 0 8%;
       text-align: left; }
+      @media screen and (max-width: 767px) {
+        .members .tabContent .member-l {
+          margin-top: 4vh;
+          margin-bottom: 8vh; } }
       .members .tabContent .member-l .h3 {
         display: inline-block;
         margin: 7% 0;
@@ -3838,17 +3873,33 @@ body {
       flex-direction: column;
       justify-content: space-around;
       text-align: left; }
-      .members .tabContent .member-r > .explain_regular {
+      @media screen and (max-width: 767px) {
+        .members .tabContent .member-r {
+          padding: 0 8% 8%; } }
+      .members .tabContent .member-r .explain_regular {
         margin-bottom: 8px;
         padding-left: 30px; }
-        .members .tabContent .member-r > .explain_regular > li {
+        .members .tabContent .member-r .explain_regular > li {
+          position: relative;
           padding-left: 7px;
           font-size: 1.17rem;
           list-style-type: square;
           line-height: 1.8; }
-          @media screen and (max-width: 767px) {
-            .members .tabContent .member-r > .explain_regular > li {
-              font-size: 1.75rem; } }
+        @media screen and (max-width: 767px) {
+          .members .tabContent .member-r .explain_regular {
+            padding-left: 10px; }
+            .members .tabContent .member-r .explain_regular > li {
+              font-size: 1.75rem;
+              list-style-type: none; }
+              .members .tabContent .member-r .explain_regular > li:before {
+                content: "";
+                position: absolute;
+                top: .7em;
+                left: -1.1rem;
+                display: inline-block;
+                width: 3px;
+                height: 3px;
+                background-color: #000; } }
   .members .active .plus svg path:last-child {
     display: none; }
   .members .active .gray-line {
@@ -3860,11 +3911,13 @@ body {
     font-size: 8px; } }
 #join_us {
   margin: 25vh auto; }
+  #join_us .tabContent {
+    padding-bottom: 8%; }
   #join_us .member-r {
     /*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
     /*定义滚动条的轨道，内阴影及圆角*/
     /*定义滑块，内阴影及圆角*/
-    padding-bottom: 8%;
+    padding-bottom: 0%;
     padding-top: 56px;
     max-height: 80vh;
     overflow-y: auto;
@@ -3885,6 +3938,7 @@ body {
     margin-bottom: 40px;
     margin-left: 60px; }
     #join_us .explain_regular li {
+      padding-left: 2px;
       list-style-type: disc; }
   #join_us .description {
     position: absolute;
@@ -3900,16 +3954,19 @@ body {
     #join_us {
       margin: 14vh auto; }
       #join_us .explain_regular {
-        margin-left: 0; }
+        margin-left: 6px; }
+        #join_us .explain_regular li {
+          list-style-type: none; }
       #join_us .description {
         position: absolute;
-        top: -20px;
-        left: 10px;
+        top: -30px;
+        left: -6px;
         font-size: 1.17rem;
         line-height: 1.8; } }
     @media screen and (max-width: 767px) and (max-width: 767px) {
       #join_us .description {
-        font-size: 1.75rem; } }
+        font-size: 1.75rem;
+        margin-bottom: 10px; } }
 
 #contact {
   position: relative;
